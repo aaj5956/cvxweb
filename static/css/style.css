@@ -506,6 +506,9 @@ fieldset[disabled] .btn-success.active {
 
 .content-container {
   padding-top: 100px;
+  padding-bottom: 50px;
   text-align: center;
   color: black;
+  height: 70%;
+  overflow: scroll;
 }
