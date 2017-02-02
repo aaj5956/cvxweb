@@ -1,4 +1,6 @@
 from flask import Flask, render_template
+import signal
+import sys
 
 app = Flask(__name__)
 
@@ -9,5 +11,6 @@ def index():
 @app.route("/connections")
 def connection():
 	return render_template("connections.html")
+
 if __name__ == "__main__":
 	app.run(host='0.0.0.0')
