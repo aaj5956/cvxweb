@@ -1,45 +1,58 @@
 import json
-
+'''
+{
+nodes: [
+  {
+	data: {
+	  "id": "n0",
+	  "name": "L3 Network"
+	}
+  },
+  {
+	data: {
+	  "id": "n1",
+	  "name": "gb421"
+	}
+  },
+  {
+	data: {
+	  "id": "n2",
+	  "name": "gb420"
+	}
+  }
+],
+edges: [
+  {
+	data: {
+	  "source": "n0",
+	  "target": "n1"
+	}
+  },
+  {
+	data: {
+	  "source": "n0",
+	  "target": "n2"
+	}
+  }
+]
+}
+'''
 data = {
 	"nodes": [
 		{
-		  "id": "n0",
-		  "label": "L3 Network",
-		  "x": 0,
-		  "y": 0,
-		  "size": 3
-		},
-		{
-		  "id": "n1",
-		  "label": "Another node",
-		  "x": 3,
-		  "y": 1,
-		  "size": 1
-		},
-		{
-		  "id": "n2",
-		  "label": "And a last one",
-		  "x": 1,
-		  "y": 3,
-		  "size": 1
-		}
+		  	data: {
+		  	  "id": "n0",
+		  	  "name": "L3 Network"
+		  	}
+	    }
 	],
 	"edges": [
 		{
-		  "id": "e0",
-		  "source": "n0",
-		  "target": "n1"
-		},
-		{
-		  "id": "e1",
-		  "source": "n1",
-		  "target": "n2"
-		},
-		{
-		  "id": "e2",
-		  "source": "n2",
-		  "target": "n0"
-		}
+		  	data: {
+		  	  "source": "n0",
+		  	  "target": "n1"
+		  	}
+	    }
 	]
 }
 new_data = {

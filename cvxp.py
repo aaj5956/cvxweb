@@ -1,6 +1,7 @@
 from jsonrpclib import Server
 import json
 import ssl
+import os
 
 ssl._create_default_https_context = ssl._create_unverified_context
 
@@ -44,11 +45,10 @@ def main():
 	data = {
 		"nodes": [
 			{
-			  "id": "n0",
-			  "label": "L3 Network",
-			  "x": 0,
-			  "y": 0,
-			  "size": 3
+				"data": {
+			  	  "id": "n0",
+			  	  "name": "L3 Network"
+			  	}
 			}
 		],
 		"edges": [
@@ -69,16 +69,16 @@ def main():
 		while x < len(hosts):
 			#print hosts[x], vteps[x]
 			new_data = {
-				"id": "n"+str(count),
-				"label": hosts[x],
-				"x": i,
-				"y": j,
-				"size": 1
+				"data": {
+			  	  "id": "n"+str(count),
+			  	  "name": hosts[x]
+			  	}
 			}
 			new_edge = {
-				"id": "e"+str(x),
-	  		  	"source": "n0",
-	  		  	"target": "n"+str(count)
+				"data": {
+			  	  "source": "n0",
+			  	  "target": "n"+str(count)
+			  	}
 			}
 			x += 1
 			count += 1
@@ -92,8 +92,6 @@ def main():
 	else:
 		print "vxlan service not running on the cvx"
 
-	with open('data.json', 'w') as outfile:
+	filepath = os.path.join('static/cytoscape/', 'data.json')
+	with open(filepath, 'w') as outfile:
 		json.dump(data, outfile, indent = 4)
-
-# main()
-# main()
