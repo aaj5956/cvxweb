@@ -107,12 +107,13 @@
     <script src="{{ url_for('static', filename = 'js/sigma.min.js') }}"></script>
     <script src="{{ url_for('static', filename = 'js/sigma.require.js') }}"></script>
     <script src="{{ url_for('static', filename = 'js/jqBootstrapValidation.js') }}"></script>
+    <script src="{{ url_for('static', filename = 'plugins/sigma.parsers.json.min.js') }}"></script>
 
     <!-- Theme JavaScript -->
     <script src="{{ url_for('static', filename = 'js/custom.js') }}"></script>
 
     <script>
-        sigma.parsers.json('data.json', {
+        sigma.parsers.json('static/data.json', {
           container: 'content-container',
           settings: {
             defaultNodeColor: '#ec5148'

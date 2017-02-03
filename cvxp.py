@@ -93,7 +93,7 @@ def main():
 		print "vxlan service not running on the cvx"
 
 	with open('data.json', 'w') as outfile:
-		json.dump(data, outfile)
+		json.dump(data, outfile, indent = 4)
 
 # main()
 # main()
