@@ -138,7 +138,8 @@ header .intro-text .skills {
 }
 .navbar-custom .navbar-nav li.active a {
   color: white;
-  background: #18BC9C;
+  background: rgba(255,255,255,.1);
+  /*background: #18BC9C;*/
 }
 .navbar-custom .navbar-nav li.active a:hover,
 .navbar-custom .navbar-nav li.active a:focus,

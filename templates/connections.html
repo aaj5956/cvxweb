@@ -51,12 +51,10 @@
                     <li class="hidden">
                         <a href="/"></a>
                     </li>
-                    <li class="page-scroll">
-                        <a href="#">Services</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#connections">CVX Clients</a>
-                    </li>
+                    <li class="page-scroll active"><a href="/connections">CVX Clients</a></li>
+                    <li class="page-scroll"><a href="#">Topology</a></li>
+                    <li class="page-scroll"><a href="#">VxLAN</a></li>
+                    <li class="page-scroll"><a href="#">RFE</a></li>
                     <li class="page-scroll">
                         <a href="#">Admin</a>
                     </li>
@@ -130,12 +128,11 @@
     <script src="{{ url_for('static', filename = 'js/jquery.min.js') }}"></script>
 
     <!-- Bootstrap Core JavaScript -->
-    <script src=""{{ url_for('static', filename = 'js/bootstrap.min.js') }}""></script>
+    <script src="{{ url_for('static', filename = 'js/bootstrap.min.js') }}></script>
 
     <!-- Plugin JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
 
-    <!-- Contact Form JavaScript -->
     <script src="{{ url_for('static', filename = 'js/jqBootstrapValidation.js') }}"></script>
 
     <!-- Theme JavaScript -->
