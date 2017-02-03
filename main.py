@@ -1,7 +1,9 @@
 from flask import Flask, render_template
+import json
 import sys
 import pyeapi
 import cvxp
+import bugalerts
 from datetime import datetime
 from dateutil import tz
 import parser
@@ -32,12 +34,30 @@ def topology():
 
 @app.route("/vxlan")
 def vxlan():
-	cvxp.main()
-	return render_template("vxlan.html")
+	resp =  node.enable('show service vxlan address-table received')
+	op = []
+	for mac in resp[0]['result']["switches"]:
+	    vtep = resp[0]['result']["switches"][mac]['vnis'][0]['bumVtepListTable'][0]['vtepIpList'][0]
+	    mac = mac.replace('-',':')
+	    op.append({'mac':mac,'vtep':vtep})
+	resp = node.enable('show cvx connections brief')
+	mac_host = []
+	for res in resp[0]['result']['connections']:
+	     mac_host.append({'switchId':res['switchId'],'host':res['hostname']})
+	cnt = 0
+	for macid in op:
+	    mac = macid['mac']
+	    for host in mac_host:
+	        if host['switchId'] == mac:
+	            op[cnt]['host'] = host['host']
+	    cnt += 1
+	return render_template("vxlan.html",op = op)
 
 @app.route("/bugalerts")
-def bugalerts():
-	return render_template("bugalerts.html")
+def bugalert():
+	op = bugalerts.main()
+	print json.dumps(op,indent = 4)
+	return render_template("bugalerts.html",op = op)
 
 @app.template_filter('format_date')
 def format_date(text):

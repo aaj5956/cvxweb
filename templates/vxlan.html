@@ -65,10 +65,35 @@
         <!-- /.container-fluid -->
     </nav>
 
+<<<<<<< HEAD
+        <div class="content-container" id = "content-container">
+          <div class="col-lg-2">
+            <table class="table table-hover">
+              <thead>
+                <tr>
+                  <th class="text-center">#</th>
+                  <th class="text-center">SwitchID</th>
+                  <th class="text-center">Host</th>
+                  <th class="text-center">VTEP</th>
+                </tr>
+              </thead>
+              <tbody>
+                {% for row in op %}
+                  <tr>
+                    <td>{{ loop.index }}</td>
+                    <td>{{ row.mac }}</td>
+                    <td>{{ row.host }}</td>
+                    <td>{{ row.vtep }}</td>
+                  </tr>
+                {% endfor %}
+              </tbody>
+          </div>
+=======
         <div class="content-container">
                 <div class="col-lg-12">
                     <iframe src="{{ url_for('static', filename = 'cytoscape/index.html') }}" style="border:none;" width="1024" height="800"></iframe>
                 </div>
+>>>>>>> 9fc732d2307aab54e80db6a3acc57022ff421f72
         </div>
 
     <!-- Footer -->
@@ -97,15 +122,26 @@
     <script src="{{ url_for('static', filename = 'js/jquery.min.js') }}"></script>
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="{{ url_for('static', filename = 'js/bootstrap.min.js') }}></script>
+    <script src="{{ url_for('static', filename = 'js/bootstrap.min.js') }}"></script>
 
     <!-- Plugin JavaScript -->
 
     <!-- SigmaJS JavaScript -->
+<<<<<<< HEAD
+
+    <script src="{{ url_for('static', filename = 'js/jqBootstrapValidation.js') }}"></script>
+
+
+    <!-- Theme JavaScript -->
+    <script src="{{ url_for('static', filename = 'js/custom.js') }}"></script>
+
+
+=======
     <script src="{{ url_for('static', filename = 'js/jqBootstrapValidation.js') }}"></script>
 
     <!-- Theme JavaScript -->
     <script src="{{ url_for('static', filename = 'js/custom.js') }}"></script>
+>>>>>>> 9fc732d2307aab54e80db6a3acc57022ff421f72
 </body>
 
 </html>

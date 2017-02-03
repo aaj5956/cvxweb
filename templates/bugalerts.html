@@ -68,7 +68,48 @@
 
         <div class="content-container">
                 <div class="col-lg-12">
+                  <table class="table table-hover">
+                    <thead>
+                      <tr>
+                        <th class="text-center">#</th>
+                        <th class="text-center">SwitchId</th>
+                        <th class="text-center">Hostname</th>
+                        <th class="text-center">EOS Version</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {% for row in op %}
+                      <tr>
+                        <td>{{ loop.index }}</td>
+                        <td>{{ row.mac }}</td>
+                        <td>
+                          {{ row.op[0].host }}
+                          <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#myModal">Show Bugs</button>
+                        </td>
+                        <td>{{ row.op[0].eos }}</td>
+                      {% endfor %}
+                    </tbody>
                 </div>
+                <!-- Modal -->
+                      <div id="myModal" class="modal fade" role="dialog">
+                      <div class="modal-dialog">
+
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Modal Header</h4>
+                          </div>
+                          <div class="modal-body">
+                            <p>Some text in the modal.</p>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+
+                      </div>
+                      </div>
         </div>
 
     <!-- Footer -->
@@ -97,14 +138,12 @@
     <script src="{{ url_for('static', filename = 'js/jquery.min.js') }}"></script>
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="{{ url_for('static', filename = 'js/bootstrap.min.js') }}></script>
+    <script src="{{ url_for('static', filename = 'js/bootstrap.min.js') }}"></script>
 
     <!-- Plugin JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
 
     <!-- SigmaJS JavaScript -->
-    <script src="{{ url_for('static', filename = 'js/sigma.min.js') }}"></script>
-    <script src="{{ url_for('static', filename = 'js/sigma.require.js') }}"></script>
     <script src="{{ url_for('static', filename = 'js/jqBootstrapValidation.js') }}"></script>
 
     <!-- Theme JavaScript -->
