@@ -20,6 +20,14 @@ def connection():
 	conn = op[0]['result']['connections']
 	return render_template("connections.html",conn = conn)
 
+@app.route("/topology")
+def connection():
+	return render_template("topology.html")
+
+@app.route("/vxlan")
+def connection():
+	return render_template("vxlan.html")
+
 @app.template_filter('format_date')
 def format_date(text):
 	"""Convert a string to all datetime object."""
