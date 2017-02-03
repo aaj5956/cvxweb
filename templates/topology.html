@@ -51,8 +51,8 @@
                     <li class="hidden">
                         <a href="/"></a>
                     </li>
-                    <li class="page-scroll active"><a href="/connections">CVX Clients</a></li>
-                    <li class="page-scroll"><a href="/topology">Topology</a></li>
+                    <li class="page-scroll"><a href="/connections">CVX Clients</a></li>
+                    <li class="page-scroll active"><a href="/topology">Topology</a></li>
                     <li class="page-scroll"><a href="/vxlan">VxLAN</a></li>
                     <li class="page-scroll"><a href="#">RFE</a></li>
                     <li class="page-scroll">
@@ -67,38 +67,6 @@
 
         <div class="content-container">
                 <div class="col-lg-12">
-                  <table class="table table-hover">
-                    <thead>
-                      <tr>
-                        <th class="text-center">#</th>
-                        <th class="text-center">Hostname</th>
-                        <th class="text-center">SwitchId</th>
-                        <th class="text-center">Status</th>
-                        <!-- <th class="text-center">oobConnectionSecured</th> -->
-                        <th class="text-center" colspan = 2>heartbeatStatus</th>
-                        <!-- <th class="text-center">ibConnectionSecured</th> -->
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <th class="text-center" colspan = 4></th>
-                        <th class="text-center" >lastHeartbeatSent</th>
-                        <th class="text-center" >lastHeartbeatReceived</th>
-                        <!-- <th class="text-center" >Offset</th> -->
-                        <th class="text-center" ></th>
-                      </tr>
-                      {% for con in conn %}
-                        <tr>
-                          <td>{{ loop.index }}</td>
-                          <td>{{ con.hostname }}</td>
-                          <td>{{ con.switchId }}</td>
-                          <td>{{ con.status }}</td>
-                          <td>{{ con.heartbeatStatus.lastHeartbeatSent|format_date }}</td>
-                          <td>{{ con.heartbeatStatus.lastHeartbeatReceived|format_date }}</td>
-                        </tr>
-                      {% endfor %}
-                    </tbody>
-                  </table>
                 </div>
         </div>
 
