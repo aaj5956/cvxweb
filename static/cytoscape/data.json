@@ -1,0 +1,36 @@
+{
+    "nodes": [
+        {
+            "data": {
+                "id": "n0", 
+                "name": "L3 Network"
+            }
+        }, 
+        {
+            "data": {
+                "id": "n1", 
+                "name": "gb421"
+            }
+        }, 
+        {
+            "data": {
+                "id": "n2", 
+                "name": "gb420"
+            }
+        }
+    ], 
+    "edges": [
+        {
+            "data": {
+                "source": "n0", 
+                "target": "n1"
+            }
+        }, 
+        {
+            "data": {
+                "source": "n0", 
+                "target": "n2"
+            }
+        }
+    ]
+}
