@@ -1,6 +1,7 @@
 from flask import Flask, render_template
 import sys
 import pyeapi
+import cvxp
 from datetime import datetime
 from dateutil import tz
 
@@ -26,6 +27,7 @@ def topology():
 
 @app.route("/vxlan")
 def vxlan():
+	cvxp.main()
 	return render_template("vxlan.html")
 
 @app.template_filter('format_date')
