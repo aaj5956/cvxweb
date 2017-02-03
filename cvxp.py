@@ -95,5 +95,5 @@ def main():
 	with open('data.json', 'w') as outfile:
 		json.dump(data, outfile, indent = 4)
 
-# main()
+main()
 # main()
