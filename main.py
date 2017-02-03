@@ -21,11 +21,11 @@ def connection():
 	return render_template("connections.html",conn = conn)
 
 @app.route("/topology")
-def connection():
+def topology():
 	return render_template("topology.html")
 
 @app.route("/vxlan")
-def connection():
+def vxlan():
 	return render_template("vxlan.html")
 
 @app.template_filter('format_date')
