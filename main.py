@@ -30,6 +30,10 @@ def vxlan():
 	cvxp.main()
 	return render_template("vxlan.html")
 
+@app.route("/bugalerts")
+def bugalerts():
+	return render_template("bugalerts.html")
+
 @app.template_filter('format_date')
 def format_date(text):
 	"""Convert a string to all datetime object."""
