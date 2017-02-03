@@ -1,0 +1,2541 @@
+{
+  "jsonrpc": "2.0",
+  "result": [
+    {
+      "neighbors": {
+        "gb421.blr.aristanetworks.com-Ethernet66": {
+          "toPort": [
+            {
+              "name": "Ethernet6",
+              "portChannel": "",
+              "hostname": "do451.blr.aristanetworks.com"
+            }
+          ],
+          "fromPort": {
+            "name": "Ethernet66",
+            "portChannel": "",
+            "hostname": "gb421.blr.aristanetworks.com"
+          }
+        },
+        "co587.aristanetworks.com-Ethernet2": {
+          "toPort": [
+            {
+              "name": "Ethernet5",
+              "portChannel": "",
+              "hostname": "ro501.aristanetworks.com"
+            }
+          ],
+          "fromPort": {
+            "name": "Ethernet2",
+            "portChannel": "",
+            "hostname": "co587.aristanetworks.com"
+          }
+        },
+        "dm1-rack238-tor.aristanetworks.com-Ethernet46": {
+          "toPort": [
+            {
+              "name": "Management1",
+              "portChannel": "",
+              "hostname": "ro501.aristanetworks.com"
+            }
+          ],
+          "fromPort": {
+            "name": "Ethernet46",
+            "portChannel": "",
+            "hostname": "dm1-rack238-tor.aristanetworks.com"
+          }
+        },
+        "gb421.blr.aristanetworks.com-Ethernet65": {
+          "toPort": [
+            {
+              "name": "Ethernet6",
+              "portChannel": "",
+              "hostname": "do450.blr.aristanetworks.com"
+            }
+          ],
+          "fromPort": {
+            "name": "Ethernet65",
+            "portChannel": "",
+            "hostname": "gb421.blr.aristanetworks.com"
+          }
+        },
+        "mn435-Ethernet50": {
+          "toPort": [
+            {
+              "name": "Ethernet24",
+              "portChannel": "",
+              "hostname": "mt708.blr.aristanetworks.com"
+            }
+          ],
+          "fromPort": {
+            "name": "Ethernet50",
+            "portChannel": "",
+            "hostname": "mn435"
+          }
+        },
+        "mn435-Ethernet51": {
+          "toPort": [
+            {
+              "name": "Ethernet21",
+              "portChannel": "",
+              "hostname": "cz153.blr.aristanetworks.com"
+            }
+          ],
+          "fromPort": {
+            "name": "Ethernet51",
+            "portChannel": "",
+            "hostname": "mn435"
+          }
+        },
+        "mn435-Ethernet49": {
+          "toPort": [
+            {
+              "name": "Ethernet23",
+              "portChannel": "",
+              "hostname": "mt708.blr.aristanetworks.com"
+            }
+          ],
+          "fromPort": {
+            "name": "Ethernet49",
+            "portChannel": "",
+            "hostname": "mn435"
+          }
+        },
+        "co641.aristanetworks.com-Ethernet20": {
+          "toPort": [
+            {
+              "name": "Ethernet44",
+              "portChannel": "",
+              "hostname": "co641.aristanetworks.com"
+            },
+            {
+              "name": "Ethernet23",
+              "portChannel": "",
+              "hostname": "do450.blr.aristanetworks.com"
+            }
+          ],
+          "fromPort": {
+            "name": "Ethernet20",
+            "portChannel": "",
+            "hostname": "co641.aristanetworks.com"
+          }
+        },
+        "co645.blr.aristanetworks.com-Ethernet6": {
+          "toPort": [
+            {
+              "name": "Ethernet11",
+              "portChannel": "",
+              "hostname": "co641.aristanetworks.com"
+            }
+          ],
+          "fromPort": {
+            "name": "Ethernet6",
+            "portChannel": "",
+            "hostname": "co645.blr.aristanetworks.com"
+          }
+        },
+        "co645.blr.aristanetworks.com-Ethernet1": {
+          "toPort": [
+            {
+              "name": "Ethernet1",
+              "portChannel": "",
+              "hostname": "co646.aristanetworks.com"
+            }
+          ],
+          "fromPort": {
+            "name": "Ethernet1",
+            "portChannel": "",
+            "hostname": "co645.blr.aristanetworks.com"
+          }
+        },
+        "co648.blr.aristanetworks.com-Ethernet8": {
+          "toPort": [
+            {
+              "name": "Ethernet8",
+              "portChannel": "",
+              "hostname": "co647.blr.aristanetworks.com"
+            }
+          ],
+          "fromPort": {
+            "name": "Ethernet8",
+            "portChannel": "",
+            "hostname": "co648.blr.aristanetworks.com"
+          }
+        },
+        "co645.blr.aristanetworks.com-Ethernet2": {
+          "toPort": [
+            {
+              "name": "Ethernet2",
+              "portChannel": "",
+              "hostname": "co646.aristanetworks.com"
+            }
+          ],
+          "fromPort": {
+            "name": "Ethernet2",
+            "portChannel": "",
+            "hostname": "co645.blr.aristanetworks.com"
+          }
+        },
+        "do451.blr.aristanetworks.com-Ethernet6": {
+          "toPort": [
+            {
+              "name": "Ethernet66",
+              "portChannel": "",
+              "hostname": "gb421.blr.aristanetworks.com"
+            }
+          ],
+          "fromPort": {
+            "name": "Ethernet6",
+            "portChannel": "",
+            "hostname": "do451.blr.aristanetworks.com"
+          }
+        },
+        "do450.blr.aristanetworks.com-Ethernet17": {
+          "toPort": [
+            {
+              "name": "Ethernet17",
+              "portChannel": "",
+              "hostname": "cz150.blr.aristanetworks.com"
+            }
+          ],
+          "fromPort": {
+            "name": "Ethernet17",
+            "portChannel": "",
+            "hostname": "do450.blr.aristanetworks.com"
+          }
+        },
+        "co585.aristanetworks.com-Ethernet1": {
+          "toPort": [
+            {
+              "name": "Ethernet9",
+              "portChannel": "",
+              "hostname": "ro503-alta-lab.dm1tac.aristanetworks.com"
+            }
+          ],
+          "fromPort": {
+            "name": "Ethernet1",
+            "portChannel": "",
+            "hostname": "co585.aristanetworks.com"
+          }
+        },
+        "fm151.blr.aristanetworks.com-Management1": {
+          "toPort": [
+            {
+              "name": "Ethernet44",
+              "portChannel": "",
+              "hostname": "BG1-34-MGMT-7048T-A"
+            }
+          ],
+          "fromPort": {
+            "name": "Management1",
+            "portChannel": "",
+            "hostname": "fm151.blr.aristanetworks.com"
+          }
+        },
+        "co585.aristanetworks.com-Ethernet4": {
+          "toPort": [
+            {
+              "name": "Ethernet6",
+              "portChannel": "",
+              "hostname": "ro502.aristanetworks.com"
+            }
+          ],
+          "fromPort": {
+            "name": "Ethernet4",
+            "portChannel": "",
+            "hostname": "co585.aristanetworks.com"
+          }
+        },
+        "co641.aristanetworks.com-Ethernet12": {
+          "toPort": [
+            {
+              "name": "Ethernet6",
+              "portChannel": "",
+              "hostname": "co646.aristanetworks.com"
+            }
+          ],
+          "fromPort": {
+            "name": "Ethernet12",
+            "portChannel": "",
+            "hostname": "co641.aristanetworks.com"
+          }
+        },
+        "co585.aristanetworks.com-Ethernet9": {
+          "toPort": [
+            {
+              "name": "Ethernet3",
+              "portChannel": "",
+              "hostname": "sr285-alta-lab.dm1tac.aristanetworks.com"
+            }
+          ],
+          "fromPort": {
+            "name": "Ethernet9",
+            "portChannel": "",
+            "hostname": "co585.aristanetworks.com"
+          }
+        },
+        "ro501.aristanetworks.com-Management1": {
+          "toPort": [
+            {
+              "name": "Ethernet46",
+              "portChannel": "",
+              "hostname": "dm1-rack238-tor.aristanetworks.com"
+            }
+          ],
+          "fromPort": {
+            "name": "Management1",
+            "portChannel": "",
+            "hostname": "ro501.aristanetworks.com"
+          }
+        },
+        "do450.blr.aristanetworks.com-Ethernet19": {
+          "toPort": [
+            {
+              "name": "Ethernet19",
+              "portChannel": "",
+              "hostname": "cz151.blr.aristanetworks.com"
+            }
+          ],
+          "fromPort": {
+            "name": "Ethernet19",
+            "portChannel": "",
+            "hostname": "do450.blr.aristanetworks.com"
+          }
+        },
+        "co648.blr.aristanetworks.com-Management1": {
+          "toPort": [
+            {
+              "name": "Ethernet30",
+              "portChannel": "",
+              "hostname": "BG1-34-MGMT-7048T-A"
+            }
+          ],
+          "fromPort": {
+            "name": "Management1",
+            "portChannel": "",
+            "hostname": "co648.blr.aristanetworks.com"
+          }
+        },
+        "cz153.blr.aristanetworks.com-Management1": {
+          "toPort": [
+            {
+              "name": "Ethernet26",
+              "portChannel": "",
+              "hostname": "BG1-34-MGMT-7048T-A"
+            }
+          ],
+          "fromPort": {
+            "name": "Management1",
+            "portChannel": "",
+            "hostname": "cz153.blr.aristanetworks.com"
+          }
+        },
+        "co641.aristanetworks.com-Management1": {
+          "toPort": [
+            {
+              "name": "Ethernet28",
+              "portChannel": "",
+              "hostname": "BG1-34-MGMT-7048T-A"
+            }
+          ],
+          "fromPort": {
+            "name": "Management1",
+            "portChannel": "",
+            "hostname": "co641.aristanetworks.com"
+          }
+        },
+        "ro501.aristanetworks.com-Ethernet8": {
+          "toPort": [
+            {
+              "name": "Ethernet8",
+              "portChannel": "",
+              "hostname": "ro502.aristanetworks.com"
+            }
+          ],
+          "fromPort": {
+            "name": "Ethernet8",
+            "portChannel": "",
+            "hostname": "ro501.aristanetworks.com"
+          }
+        },
+        "ro504.aristanetworks.com-Ethernet6": {
+          "toPort": [
+            {
+              "name": "Ethernet5",
+              "portChannel": "",
+              "hostname": "co585.aristanetworks.com"
+            }
+          ],
+          "fromPort": {
+            "name": "Ethernet6",
+            "portChannel": "",
+            "hostname": "ro504.aristanetworks.com"
+          }
+        },
+        "fm150.blr.aristanetworks.com-Ethernet6": {
+          "toPort": [
+            {
+              "name": "Ethernet6",
+              "portChannel": "",
+              "hostname": "fm151.blr.aristanetworks.com"
+            }
+          ],
+          "fromPort": {
+            "name": "Ethernet6",
+            "portChannel": "",
+            "hostname": "fm150.blr.aristanetworks.com"
+          }
+        },
+        "fm150.blr.aristanetworks.com-Ethernet5": {
+          "toPort": [
+            {
+              "name": "Ethernet5",
+              "portChannel": "",
+              "hostname": "fm151.blr.aristanetworks.com"
+            }
+          ],
+          "fromPort": {
+            "name": "Ethernet5",
+            "portChannel": "",
+            "hostname": "fm150.blr.aristanetworks.com"
+          }
+        },
+        "mn434.blr.aristanetworks.com-Management1": {
+          "toPort": [
+            {
+              "name": "Ethernet39",
+              "portChannel": "",
+              "hostname": "BG1-34-MGMT-7048T-A"
+            }
+          ],
+          "fromPort": {
+            "name": "Management1",
+            "portChannel": "",
+            "hostname": "mn434.blr.aristanetworks.com"
+          }
+        },
+        "fm150.blr.aristanetworks.com-Ethernet2": {
+          "toPort": [
+            {
+              "name": "Ethernet1",
+              "portChannel": "",
+              "hostname": "co648.blr.aristanetworks.com"
+            }
+          ],
+          "fromPort": {
+            "name": "Ethernet2",
+            "portChannel": "",
+            "hostname": "fm150.blr.aristanetworks.com"
+          }
+        },
+        "fm150.blr.aristanetworks.com-Ethernet1": {
+          "toPort": [
+            {
+              "name": "Ethernet1",
+              "portChannel": "",
+              "hostname": "co647.blr.aristanetworks.com"
+            }
+          ],
+          "fromPort": {
+            "name": "Ethernet1",
+            "portChannel": "",
+            "hostname": "fm150.blr.aristanetworks.com"
+          }
+        },
+        "gb421.blr.aristanetworks.com-Management1": {
+          "toPort": [
+            {
+              "name": "Ethernet42",
+              "portChannel": "",
+              "hostname": "BG1-34-MGMT-7048T-A"
+            }
+          ],
+          "fromPort": {
+            "name": "Management1",
+            "portChannel": "",
+            "hostname": "gb421.blr.aristanetworks.com"
+          }
+        },
+        "BG1-34-MGMT-7048T-A-Ethernet40": {
+          "toPort": [
+            {
+              "name": "Management1",
+              "portChannel": "",
+              "hostname": "gb420.blr.aristanetworks.com"
+            }
+          ],
+          "fromPort": {
+            "name": "Ethernet40",
+            "portChannel": "",
+            "hostname": "BG1-34-MGMT-7048T-A"
+          }
+        },
+        "BG1-34-MGMT-7048T-A-Ethernet42": {
+          "toPort": [
+            {
+              "name": "Management1",
+              "portChannel": "",
+              "hostname": "gb421.blr.aristanetworks.com"
+            }
+          ],
+          "fromPort": {
+            "name": "Ethernet42",
+            "portChannel": "",
+            "hostname": "BG1-34-MGMT-7048T-A"
+          }
+        },
+        "BG1-34-MGMT-7048T-A-Ethernet43": {
+          "toPort": [
+            {
+              "name": "Management1",
+              "portChannel": "",
+              "hostname": "fm150.blr.aristanetworks.com"
+            }
+          ],
+          "fromPort": {
+            "name": "Ethernet43",
+            "portChannel": "",
+            "hostname": "BG1-34-MGMT-7048T-A"
+          }
+        },
+        "BG1-34-MGMT-7048T-A-Ethernet44": {
+          "toPort": [
+            {
+              "name": "Management1",
+              "portChannel": "",
+              "hostname": "fm151.blr.aristanetworks.com"
+            }
+          ],
+          "fromPort": {
+            "name": "Ethernet44",
+            "portChannel": "",
+            "hostname": "BG1-34-MGMT-7048T-A"
+          }
+        },
+        "BG1-34-MGMT-7048T-A-Ethernet45": {
+          "toPort": [
+            {
+              "name": "Management1",
+              "portChannel": "",
+              "hostname": "cz151.blr.aristanetworks.com"
+            }
+          ],
+          "fromPort": {
+            "name": "Ethernet45",
+            "portChannel": "",
+            "hostname": "BG1-34-MGMT-7048T-A"
+          }
+        },
+        "mn433.blr.aristanetworks.com-Ethernet1": {
+          "toPort": [
+            {
+              "name": "Ethernet1",
+              "portChannel": "",
+              "hostname": "mn434.blr.aristanetworks.com"
+            }
+          ],
+          "fromPort": {
+            "name": "Ethernet1",
+            "portChannel": "",
+            "hostname": "mn433.blr.aristanetworks.com"
+          }
+        },
+        "mn433.blr.aristanetworks.com-Ethernet3": {
+          "toPort": [
+            {
+              "name": "Ethernet3",
+              "portChannel": "",
+              "hostname": "mn434.blr.aristanetworks.com"
+            }
+          ],
+          "fromPort": {
+            "name": "Ethernet3",
+            "portChannel": "",
+            "hostname": "mn433.blr.aristanetworks.com"
+          }
+        },
+        "mn433.blr.aristanetworks.com-Ethernet2": {
+          "toPort": [
+            {
+              "name": "Ethernet2",
+              "portChannel": "",
+              "hostname": "mn434.blr.aristanetworks.com"
+            }
+          ],
+          "fromPort": {
+            "name": "Ethernet2",
+            "portChannel": "",
+            "hostname": "mn433.blr.aristanetworks.com"
+          }
+        },
+        "ro502.aristanetworks.com-Ethernet8": {
+          "toPort": [
+            {
+              "name": "Ethernet8",
+              "portChannel": "",
+              "hostname": "ro501.aristanetworks.com"
+            }
+          ],
+          "fromPort": {
+            "name": "Ethernet8",
+            "portChannel": "",
+            "hostname": "ro502.aristanetworks.com"
+          }
+        },
+        "mn433.blr.aristanetworks.com-Ethernet4": {
+          "toPort": [
+            {
+              "name": "Ethernet4",
+              "portChannel": "",
+              "hostname": "mn434.blr.aristanetworks.com"
+            }
+          ],
+          "fromPort": {
+            "name": "Ethernet4",
+            "portChannel": "",
+            "hostname": "mn433.blr.aristanetworks.com"
+          }
+        },
+        "mn433.blr.aristanetworks.com-Ethernet7": {
+          "toPort": [
+            {
+              "name": "Ethernet7",
+              "portChannel": "",
+              "hostname": "mn434.blr.aristanetworks.com"
+            }
+          ],
+          "fromPort": {
+            "name": "Ethernet7",
+            "portChannel": "",
+            "hostname": "mn433.blr.aristanetworks.com"
+          }
+        },
+        "mn433.blr.aristanetworks.com-Ethernet6": {
+          "toPort": [
+            {
+              "name": "Ethernet6",
+              "portChannel": "",
+              "hostname": "mn434.blr.aristanetworks.com"
+            }
+          ],
+          "fromPort": {
+            "name": "Ethernet6",
+            "portChannel": "",
+            "hostname": "mn433.blr.aristanetworks.com"
+          }
+        },
+        "mn433.blr.aristanetworks.com-Ethernet9": {
+          "toPort": [
+            {
+              "name": "Ethernet9",
+              "portChannel": "",
+              "hostname": "mn434.blr.aristanetworks.com"
+            }
+          ],
+          "fromPort": {
+            "name": "Ethernet9",
+            "portChannel": "",
+            "hostname": "mn433.blr.aristanetworks.com"
+          }
+        },
+        "mn433.blr.aristanetworks.com-Ethernet8": {
+          "toPort": [
+            {
+              "name": "Ethernet8",
+              "portChannel": "",
+              "hostname": "mn434.blr.aristanetworks.com"
+            }
+          ],
+          "fromPort": {
+            "name": "Ethernet8",
+            "portChannel": "",
+            "hostname": "mn433.blr.aristanetworks.com"
+          }
+        },
+        "ro502.aristanetworks.com-Ethernet6": {
+          "toPort": [
+            {
+              "name": "Ethernet4",
+              "portChannel": "",
+              "hostname": "co585.aristanetworks.com"
+            }
+          ],
+          "fromPort": {
+            "name": "Ethernet6",
+            "portChannel": "",
+            "hostname": "ro502.aristanetworks.com"
+          }
+        },
+        "fm151.blr.aristanetworks.com-Ethernet1": {
+          "toPort": [
+            {
+              "name": "Ethernet2",
+              "portChannel": "",
+              "hostname": "co647.blr.aristanetworks.com"
+            }
+          ],
+          "fromPort": {
+            "name": "Ethernet1",
+            "portChannel": "",
+            "hostname": "fm151.blr.aristanetworks.com"
+          }
+        },
+        "fm151.blr.aristanetworks.com-Ethernet2": {
+          "toPort": [
+            {
+              "name": "Ethernet2",
+              "portChannel": "",
+              "hostname": "co648.blr.aristanetworks.com"
+            }
+          ],
+          "fromPort": {
+            "name": "Ethernet2",
+            "portChannel": "",
+            "hostname": "fm151.blr.aristanetworks.com"
+          }
+        },
+        "fm151.blr.aristanetworks.com-Ethernet5": {
+          "toPort": [
+            {
+              "name": "Ethernet5",
+              "portChannel": "",
+              "hostname": "fm150.blr.aristanetworks.com"
+            }
+          ],
+          "fromPort": {
+            "name": "Ethernet5",
+            "portChannel": "",
+            "hostname": "fm151.blr.aristanetworks.com"
+          }
+        },
+        "fm151.blr.aristanetworks.com-Ethernet6": {
+          "toPort": [
+            {
+              "name": "Ethernet6",
+              "portChannel": "",
+              "hostname": "fm150.blr.aristanetworks.com"
+            }
+          ],
+          "fromPort": {
+            "name": "Ethernet6",
+            "portChannel": "",
+            "hostname": "fm151.blr.aristanetworks.com"
+          }
+        },
+        "co585.aristanetworks.com-Management1": {
+          "toPort": [
+            {
+              "name": "Ethernet39",
+              "portChannel": "",
+              "hostname": "dm1-rack238-tor.aristanetworks.com"
+            }
+          ],
+          "fromPort": {
+            "name": "Management1",
+            "portChannel": "",
+            "hostname": "co585.aristanetworks.com"
+          }
+        },
+        "tacsrv20.sjc.aristanetworks.com-p6p1": {
+          "toPort": [
+            {
+              "name": "Ethernet5",
+              "portChannel": "",
+              "hostname": "ro501.aristanetworks.com"
+            }
+          ],
+          "fromPort": {
+            "name": "p6p1",
+            "portChannel": "",
+            "hostname": "tacsrv20.sjc.aristanetworks.com"
+          }
+        },
+        "gb421.blr.aristanetworks.com-Ethernet2": {
+          "toPort": [
+            {
+              "name": "Ethernet49/5",
+              "portChannel": "",
+              "hostname": "fm151.blr.aristanetworks.com"
+            }
+          ],
+          "fromPort": {
+            "name": "Ethernet2",
+            "portChannel": "",
+            "hostname": "gb421.blr.aristanetworks.com"
+          }
+        },
+        "gb421.blr.aristanetworks.com-Ethernet4": {
+          "toPort": [
+            {
+              "name": "Ethernet4",
+              "portChannel": "",
+              "hostname": "gb420.blr.aristanetworks.com"
+            }
+          ],
+          "fromPort": {
+            "name": "Ethernet4",
+            "portChannel": "",
+            "hostname": "gb421.blr.aristanetworks.com"
+          }
+        },
+        "mn433.blr.aristanetworks.com-Ethernet10": {
+          "toPort": [
+            {
+              "name": "Ethernet10",
+              "portChannel": "",
+              "hostname": "mn434.blr.aristanetworks.com"
+            }
+          ],
+          "fromPort": {
+            "name": "Ethernet10",
+            "portChannel": "",
+            "hostname": "mn433.blr.aristanetworks.com"
+          }
+        },
+        "co646.aristanetworks.com-Ethernet6": {
+          "toPort": [
+            {
+              "name": "Ethernet12",
+              "portChannel": "",
+              "hostname": "co641.aristanetworks.com"
+            }
+          ],
+          "fromPort": {
+            "name": "Ethernet6",
+            "portChannel": "",
+            "hostname": "co646.aristanetworks.com"
+          }
+        },
+        "mt703.blr.aristanetworks.com-Management1": {
+          "toPort": [
+            {
+              "name": "Ethernet3",
+              "portChannel": "",
+              "hostname": "BG1-34-MGMT-7048T-A"
+            }
+          ],
+          "fromPort": {
+            "name": "Management1",
+            "portChannel": "",
+            "hostname": "mt703.blr.aristanetworks.com"
+          }
+        },
+        "co646.aristanetworks.com-Ethernet5": {
+          "toPort": [
+            {
+              "name": "Ethernet5",
+              "portChannel": "",
+              "hostname": "co648.blr.aristanetworks.com"
+            }
+          ],
+          "fromPort": {
+            "name": "Ethernet5",
+            "portChannel": "",
+            "hostname": "co646.aristanetworks.com"
+          }
+        },
+        "co646.aristanetworks.com-Ethernet2": {
+          "toPort": [
+            {
+              "name": "Ethernet2",
+              "portChannel": "",
+              "hostname": "co645.blr.aristanetworks.com"
+            }
+          ],
+          "fromPort": {
+            "name": "Ethernet2",
+            "portChannel": "",
+            "hostname": "co646.aristanetworks.com"
+          }
+        },
+        "co646.aristanetworks.com-Ethernet3": {
+          "toPort": [
+            {
+              "name": "Ethernet3",
+              "portChannel": "",
+              "hostname": "co647.blr.aristanetworks.com"
+            }
+          ],
+          "fromPort": {
+            "name": "Ethernet3",
+            "portChannel": "",
+            "hostname": "co646.aristanetworks.com"
+          }
+        },
+        "co646.aristanetworks.com-Ethernet1": {
+          "toPort": [
+            {
+              "name": "Ethernet1",
+              "portChannel": "",
+              "hostname": "co645.blr.aristanetworks.com"
+            }
+          ],
+          "fromPort": {
+            "name": "Ethernet1",
+            "portChannel": "",
+            "hostname": "co646.aristanetworks.com"
+          }
+        },
+        "do451.blr.aristanetworks.com-Ethernet19": {
+          "toPort": [
+            {
+              "name": "Ethernet19",
+              "portChannel": "",
+              "hostname": "cz150.blr.aristanetworks.com"
+            }
+          ],
+          "fromPort": {
+            "name": "Ethernet19",
+            "portChannel": "",
+            "hostname": "do451.blr.aristanetworks.com"
+          }
+        },
+        "co641.aristanetworks.com-Ethernet44": {
+          "toPort": [
+            {
+              "name": "Ethernet20",
+              "portChannel": "",
+              "hostname": "co641.aristanetworks.com"
+            },
+            {
+              "name": "Ethernet23",
+              "portChannel": "",
+              "hostname": "do450.blr.aristanetworks.com"
+            }
+          ],
+          "fromPort": {
+            "name": "Ethernet44",
+            "portChannel": "",
+            "hostname": "co641.aristanetworks.com"
+          }
+        },
+        "mt701.blr.aristanetworks.com-Ethernet23": {
+          "toPort": [
+            {
+              "name": "Ethernet43",
+              "portChannel": "",
+              "hostname": "mn431.blr.aristanetworks.com"
+            }
+          ],
+          "fromPort": {
+            "name": "Ethernet23",
+            "portChannel": "",
+            "hostname": "mt701.blr.aristanetworks.com"
+          }
+        },
+        "do451.blr.aristanetworks.com-Ethernet17": {
+          "toPort": [
+            {
+              "name": "Ethernet17",
+              "portChannel": "",
+              "hostname": "cz151.blr.aristanetworks.com"
+            }
+          ],
+          "fromPort": {
+            "name": "Ethernet17",
+            "portChannel": "",
+            "hostname": "do451.blr.aristanetworks.com"
+          }
+        },
+        "mt703.blr.aristanetworks.com-Ethernet1/4": {
+          "toPort": [
+            {
+              "name": "Ethernet18",
+              "portChannel": "",
+              "hostname": "mt704.blr.aristanetworks.com"
+            }
+          ],
+          "fromPort": {
+            "name": "Ethernet1/4",
+            "portChannel": "",
+            "hostname": "mt703.blr.aristanetworks.com"
+          }
+        },
+        "do451.blr.aristanetworks.com-Ethernet3": {
+          "toPort": [
+            {
+              "name": "Ethernet51",
+              "portChannel": "",
+              "hostname": "mn433.blr.aristanetworks.com"
+            }
+          ],
+          "fromPort": {
+            "name": "Ethernet3",
+            "portChannel": "",
+            "hostname": "do451.blr.aristanetworks.com"
+          }
+        },
+        "do451.blr.aristanetworks.com-Ethernet2": {
+          "toPort": [
+            {
+              "name": "Ethernet50",
+              "portChannel": "",
+              "hostname": "mn434.blr.aristanetworks.com"
+            }
+          ],
+          "fromPort": {
+            "name": "Ethernet2",
+            "portChannel": "",
+            "hostname": "do451.blr.aristanetworks.com"
+          }
+        },
+        "do451.blr.aristanetworks.com-Ethernet1": {
+          "toPort": [
+            {
+              "name": "Ethernet49",
+              "portChannel": "",
+              "hostname": "mn434.blr.aristanetworks.com"
+            }
+          ],
+          "fromPort": {
+            "name": "Ethernet1",
+            "portChannel": "",
+            "hostname": "do451.blr.aristanetworks.com"
+          }
+        },
+        "gb420.blr.aristanetworks.com-Ethernet4": {
+          "toPort": [
+            {
+              "name": "Ethernet4",
+              "portChannel": "",
+              "hostname": "gb421.blr.aristanetworks.com"
+            }
+          ],
+          "fromPort": {
+            "name": "Ethernet4",
+            "portChannel": "",
+            "hostname": "gb420.blr.aristanetworks.com"
+          }
+        },
+        "gb420.blr.aristanetworks.com-Ethernet2": {
+          "toPort": [
+            {
+              "name": "Ethernet49/1",
+              "portChannel": "",
+              "hostname": "fm151.blr.aristanetworks.com"
+            }
+          ],
+          "fromPort": {
+            "name": "Ethernet2",
+            "portChannel": "",
+            "hostname": "gb420.blr.aristanetworks.com"
+          }
+        },
+        "gb420.blr.aristanetworks.com-Ethernet1": {
+          "toPort": [
+            {
+              "name": "Ethernet49/1",
+              "portChannel": "",
+              "hostname": "fm150.blr.aristanetworks.com"
+            }
+          ],
+          "fromPort": {
+            "name": "Ethernet1",
+            "portChannel": "",
+            "hostname": "gb420.blr.aristanetworks.com"
+          }
+        },
+        "do451.blr.aristanetworks.com-Ethernet4": {
+          "toPort": [
+            {
+              "name": "Ethernet4",
+              "portChannel": "",
+              "hostname": "co641.aristanetworks.com"
+            }
+          ],
+          "fromPort": {
+            "name": "Ethernet4",
+            "portChannel": "",
+            "hostname": "do451.blr.aristanetworks.com"
+          }
+        },
+        "co648.blr.aristanetworks.com-Ethernet2": {
+          "toPort": [
+            {
+              "name": "Ethernet2",
+              "portChannel": "",
+              "hostname": "fm151.blr.aristanetworks.com"
+            }
+          ],
+          "fromPort": {
+            "name": "Ethernet2",
+            "portChannel": "",
+            "hostname": "co648.blr.aristanetworks.com"
+          }
+        },
+        "mn433.blr.aristanetworks.com-Ethernet5": {
+          "toPort": [
+            {
+              "name": "Ethernet5",
+              "portChannel": "",
+              "hostname": "mn434.blr.aristanetworks.com"
+            }
+          ],
+          "fromPort": {
+            "name": "Ethernet5",
+            "portChannel": "",
+            "hostname": "mn433.blr.aristanetworks.com"
+          }
+        },
+        "co645.blr.aristanetworks.com-Management1": {
+          "toPort": [
+            {
+              "name": "Ethernet38",
+              "portChannel": "",
+              "hostname": "BG1-34-MGMT-7048T-A"
+            }
+          ],
+          "fromPort": {
+            "name": "Management1",
+            "portChannel": "",
+            "hostname": "co645.blr.aristanetworks.com"
+          }
+        },
+        "do451.blr.aristanetworks.com-Ethernet8": {
+          "toPort": [
+            {
+              "name": "Ethernet8",
+              "portChannel": "",
+              "hostname": "do450.blr.aristanetworks.com"
+            }
+          ],
+          "fromPort": {
+            "name": "Ethernet8",
+            "portChannel": "",
+            "hostname": "do451.blr.aristanetworks.com"
+          }
+        },
+        "mn434.blr.aristanetworks.com-Ethernet49": {
+          "toPort": [
+            {
+              "name": "Ethernet1",
+              "portChannel": "",
+              "hostname": "do451.blr.aristanetworks.com"
+            }
+          ],
+          "fromPort": {
+            "name": "Ethernet49",
+            "portChannel": "",
+            "hostname": "mn434.blr.aristanetworks.com"
+          }
+        },
+        "co648.blr.aristanetworks.com-Ethernet7": {
+          "toPort": [
+            {
+              "name": "Ethernet7",
+              "portChannel": "",
+              "hostname": "co647.blr.aristanetworks.com"
+            }
+          ],
+          "fromPort": {
+            "name": "Ethernet7",
+            "portChannel": "",
+            "hostname": "co648.blr.aristanetworks.com"
+          }
+        },
+        "co648.blr.aristanetworks.com-Ethernet5": {
+          "toPort": [
+            {
+              "name": "Ethernet5",
+              "portChannel": "",
+              "hostname": "co646.aristanetworks.com"
+            }
+          ],
+          "fromPort": {
+            "name": "Ethernet5",
+            "portChannel": "",
+            "hostname": "co648.blr.aristanetworks.com"
+          }
+        },
+        "do451.blr.aristanetworks.com-Management1": {
+          "toPort": [
+            {
+              "name": "Ethernet34",
+              "portChannel": "",
+              "hostname": "BG1-34-MGMT-7048T-A"
+            }
+          ],
+          "fromPort": {
+            "name": "Management1",
+            "portChannel": "",
+            "hostname": "do451.blr.aristanetworks.com"
+          }
+        },
+        "mt708.blr.aristanetworks.com-Management1": {
+          "toPort": [
+            {
+              "name": "Ethernet8",
+              "portChannel": "",
+              "hostname": "BG1-34-MGMT-7048T-A"
+            }
+          ],
+          "fromPort": {
+            "name": "Management1",
+            "portChannel": "",
+            "hostname": "mt708.blr.aristanetworks.com"
+          }
+        },
+        "mt703.blr.aristanetworks.com-Ethernet19": {
+          "toPort": [
+            {
+              "name": "Ethernet17",
+              "portChannel": "",
+              "hostname": "mt703.blr.aristanetworks.com"
+            }
+          ],
+          "fromPort": {
+            "name": "Ethernet19",
+            "portChannel": "",
+            "hostname": "mt703.blr.aristanetworks.com"
+          }
+        },
+        "BG1-34-MGMT-7048T-A-Ethernet26": {
+          "toPort": [
+            {
+              "name": "Management1",
+              "portChannel": "",
+              "hostname": "cz153.blr.aristanetworks.com"
+            }
+          ],
+          "fromPort": {
+            "name": "Ethernet26",
+            "portChannel": "",
+            "hostname": "BG1-34-MGMT-7048T-A"
+          }
+        },
+        "BG1-34-MGMT-7048T-A-Ethernet28": {
+          "toPort": [
+            {
+              "name": "Management1",
+              "portChannel": "",
+              "hostname": "co641.aristanetworks.com"
+            }
+          ],
+          "fromPort": {
+            "name": "Ethernet28",
+            "portChannel": "",
+            "hostname": "BG1-34-MGMT-7048T-A"
+          }
+        },
+        "BG1-34-MGMT-7048T-A-Ethernet29": {
+          "toPort": [
+            {
+              "name": "Management1",
+              "portChannel": "",
+              "hostname": "co647.blr.aristanetworks.com"
+            }
+          ],
+          "fromPort": {
+            "name": "Ethernet29",
+            "portChannel": "",
+            "hostname": "BG1-34-MGMT-7048T-A"
+          }
+        },
+        "mt703.blr.aristanetworks.com-Ethernet17": {
+          "toPort": [
+            {
+              "name": "Ethernet19",
+              "portChannel": "",
+              "hostname": "mt703.blr.aristanetworks.com"
+            }
+          ],
+          "fromPort": {
+            "name": "Ethernet17",
+            "portChannel": "",
+            "hostname": "mt703.blr.aristanetworks.com"
+          }
+        },
+        "mn434.blr.aristanetworks.com-Ethernet52": {
+          "toPort": [
+            {
+              "name": "Ethernet48",
+              "portChannel": "",
+              "hostname": "co645.blr.aristanetworks.com"
+            }
+          ],
+          "fromPort": {
+            "name": "Ethernet52",
+            "portChannel": "",
+            "hostname": "mn434.blr.aristanetworks.com"
+          }
+        },
+        "mn434.blr.aristanetworks.com-Ethernet50": {
+          "toPort": [
+            {
+              "name": "Ethernet2",
+              "portChannel": "",
+              "hostname": "do451.blr.aristanetworks.com"
+            }
+          ],
+          "fromPort": {
+            "name": "Ethernet50",
+            "portChannel": "",
+            "hostname": "mn434.blr.aristanetworks.com"
+          }
+        },
+        "mn434.blr.aristanetworks.com-Ethernet51": {
+          "toPort": [
+            {
+              "name": "Ethernet3",
+              "portChannel": "",
+              "hostname": "do450.blr.aristanetworks.com"
+            }
+          ],
+          "fromPort": {
+            "name": "Ethernet51",
+            "portChannel": "",
+            "hostname": "mn434.blr.aristanetworks.com"
+          }
+        },
+        "dm1-rack238-tor.aristanetworks.com-Ethernet39": {
+          "toPort": [
+            {
+              "name": "Management1",
+              "portChannel": "",
+              "hostname": "co585.aristanetworks.com"
+            }
+          ],
+          "fromPort": {
+            "name": "Ethernet39",
+            "portChannel": "",
+            "hostname": "dm1-rack238-tor.aristanetworks.com"
+          }
+        },
+        "cz151.blr.aristanetworks.com-Management1": {
+          "toPort": [
+            {
+              "name": "Ethernet45",
+              "portChannel": "",
+              "hostname": "BG1-34-MGMT-7048T-A"
+            }
+          ],
+          "fromPort": {
+            "name": "Management1",
+            "portChannel": "",
+            "hostname": "cz151.blr.aristanetworks.com"
+          }
+        },
+        "mt708.blr.aristanetworks.com-Ethernet1/2": {
+          "toPort": [
+            {
+              "name": "Ethernet17",
+              "portChannel": "",
+              "hostname": "mt709.blr.aristanetworks.com"
+            }
+          ],
+          "fromPort": {
+            "name": "Ethernet1/2",
+            "portChannel": "",
+            "hostname": "mt708.blr.aristanetworks.com"
+          }
+        },
+        "mt708.blr.aristanetworks.com-Ethernet1/3": {
+          "toPort": [
+            {
+              "name": "Ethernet18",
+              "portChannel": "",
+              "hostname": "mt706.blr.aristanetworks.com"
+            }
+          ],
+          "fromPort": {
+            "name": "Ethernet1/3",
+            "portChannel": "",
+            "hostname": "mt708.blr.aristanetworks.com"
+          }
+        },
+        "mt704.blr.aristanetworks.com-Ethernet18": {
+          "toPort": [
+            {
+              "name": "Ethernet1/4",
+              "portChannel": "",
+              "hostname": "mt703.blr.aristanetworks.com"
+            }
+          ],
+          "fromPort": {
+            "name": "Ethernet18",
+            "portChannel": "",
+            "hostname": "mt704.blr.aristanetworks.com"
+          }
+        },
+        "ro503-alta-lab.dm1tac.aristanetworks.com-Ethernet9": {
+          "toPort": [
+            {
+              "name": "Ethernet1",
+              "portChannel": "",
+              "hostname": "co585.aristanetworks.com"
+            }
+          ],
+          "fromPort": {
+            "name": "Ethernet9",
+            "portChannel": "",
+            "hostname": "ro503-alta-lab.dm1tac.aristanetworks.com"
+          }
+        },
+        "mt708.blr.aristanetworks.com-Ethernet1/4": {
+          "toPort": [
+            {
+              "name": "Ethernet18",
+              "portChannel": "",
+              "hostname": "mt709.blr.aristanetworks.com"
+            }
+          ],
+          "fromPort": {
+            "name": "Ethernet1/4",
+            "portChannel": "",
+            "hostname": "mt708.blr.aristanetworks.com"
+          }
+        },
+        "cz153.blr.aristanetworks.com-Ethernet15": {
+          "toPort": [
+            {
+              "name": "Ethernet19",
+              "portChannel": "",
+              "hostname": "mt707.blr.aristanetworks.com"
+            }
+          ],
+          "fromPort": {
+            "name": "Ethernet15",
+            "portChannel": "",
+            "hostname": "cz153.blr.aristanetworks.com"
+          }
+        },
+        "mt701.blr.aristanetworks.com-Management1": {
+          "toPort": [
+            {
+              "name": "Ethernet1",
+              "portChannel": "",
+              "hostname": "BG1-34-MGMT-7048T-A"
+            }
+          ],
+          "fromPort": {
+            "name": "Management1",
+            "portChannel": "",
+            "hostname": "mt701.blr.aristanetworks.com"
+          }
+        },
+        "gb420.blr.aristanetworks.com-Management1": {
+          "toPort": [
+            {
+              "name": "Ethernet40",
+              "portChannel": "",
+              "hostname": "BG1-34-MGMT-7048T-A"
+            }
+          ],
+          "fromPort": {
+            "name": "Management1",
+            "portChannel": "",
+            "hostname": "gb420.blr.aristanetworks.com"
+          }
+        },
+        "BG1-34-MGMT-7048T-A-Ethernet30": {
+          "toPort": [
+            {
+              "name": "Management1",
+              "portChannel": "",
+              "hostname": "co648.blr.aristanetworks.com"
+            }
+          ],
+          "fromPort": {
+            "name": "Ethernet30",
+            "portChannel": "",
+            "hostname": "BG1-34-MGMT-7048T-A"
+          }
+        },
+        "BG1-34-MGMT-7048T-A-Ethernet33": {
+          "toPort": [
+            {
+              "name": "Management1",
+              "portChannel": "",
+              "hostname": "do450.blr.aristanetworks.com"
+            }
+          ],
+          "fromPort": {
+            "name": "Ethernet33",
+            "portChannel": "",
+            "hostname": "BG1-34-MGMT-7048T-A"
+          }
+        },
+        "BG1-34-MGMT-7048T-A-Ethernet34": {
+          "toPort": [
+            {
+              "name": "Management1",
+              "portChannel": "",
+              "hostname": "do451.blr.aristanetworks.com"
+            }
+          ],
+          "fromPort": {
+            "name": "Ethernet34",
+            "portChannel": "",
+            "hostname": "BG1-34-MGMT-7048T-A"
+          }
+        },
+        "BG1-34-MGMT-7048T-A-Ethernet39": {
+          "toPort": [
+            {
+              "name": "Management1",
+              "portChannel": "",
+              "hostname": "mn434.blr.aristanetworks.com"
+            }
+          ],
+          "fromPort": {
+            "name": "Ethernet39",
+            "portChannel": "",
+            "hostname": "BG1-34-MGMT-7048T-A"
+          }
+        },
+        "BG1-34-MGMT-7048T-A-Ethernet38": {
+          "toPort": [
+            {
+              "name": "Management1",
+              "portChannel": "",
+              "hostname": "co645.blr.aristanetworks.com"
+            }
+          ],
+          "fromPort": {
+            "name": "Ethernet38",
+            "portChannel": "",
+            "hostname": "BG1-34-MGMT-7048T-A"
+          }
+        },
+        "co647.blr.aristanetworks.com-Management1": {
+          "toPort": [
+            {
+              "name": "Ethernet29",
+              "portChannel": "",
+              "hostname": "BG1-34-MGMT-7048T-A"
+            }
+          ],
+          "fromPort": {
+            "name": "Management1",
+            "portChannel": "",
+            "hostname": "co647.blr.aristanetworks.com"
+          }
+        },
+        "do450.blr.aristanetworks.com-Management1": {
+          "toPort": [
+            {
+              "name": "Ethernet33",
+              "portChannel": "",
+              "hostname": "BG1-34-MGMT-7048T-A"
+            }
+          ],
+          "fromPort": {
+            "name": "Management1",
+            "portChannel": "",
+            "hostname": "do450.blr.aristanetworks.com"
+          }
+        },
+        "mt708.blr.aristanetworks.com-Ethernet23": {
+          "toPort": [
+            {
+              "name": "Ethernet49",
+              "portChannel": "",
+              "hostname": "mn435"
+            }
+          ],
+          "fromPort": {
+            "name": "Ethernet23",
+            "portChannel": "",
+            "hostname": "mt708.blr.aristanetworks.com"
+          }
+        },
+        "mt709.blr.aristanetworks.com-Ethernet18": {
+          "toPort": [
+            {
+              "name": "Ethernet1/4",
+              "portChannel": "",
+              "hostname": "mt708.blr.aristanetworks.com"
+            }
+          ],
+          "fromPort": {
+            "name": "Ethernet18",
+            "portChannel": "",
+            "hostname": "mt709.blr.aristanetworks.com"
+          }
+        },
+        "do451.blr.aristanetworks.com-Ethernet45": {
+          "toPort": [
+            {
+              "name": "Ethernet45",
+              "portChannel": "",
+              "hostname": "co645.blr.aristanetworks.com"
+            }
+          ],
+          "fromPort": {
+            "name": "Ethernet45",
+            "portChannel": "",
+            "hostname": "do451.blr.aristanetworks.com"
+          }
+        },
+        "fm151.blr.aristanetworks.com-Ethernet49/5": {
+          "toPort": [
+            {
+              "name": "Ethernet2",
+              "portChannel": "",
+              "hostname": "gb421.blr.aristanetworks.com"
+            }
+          ],
+          "fromPort": {
+            "name": "Ethernet49/5",
+            "portChannel": "",
+            "hostname": "fm151.blr.aristanetworks.com"
+          }
+        },
+        "mt709.blr.aristanetworks.com-Ethernet17": {
+          "toPort": [
+            {
+              "name": "Ethernet1/2",
+              "portChannel": "",
+              "hostname": "mt708.blr.aristanetworks.com"
+            },
+            {
+              "name": "Ethernet27",
+              "portChannel": "",
+              "hostname": "cz153.blr.aristanetworks.com"
+            }
+          ],
+          "fromPort": {
+            "name": "Ethernet17",
+            "portChannel": "",
+            "hostname": "mt709.blr.aristanetworks.com"
+          }
+        },
+        "fm151.blr.aristanetworks.com-Ethernet49/1": {
+          "toPort": [
+            {
+              "name": "Ethernet2",
+              "portChannel": "",
+              "hostname": "gb420.blr.aristanetworks.com"
+            }
+          ],
+          "fromPort": {
+            "name": "Ethernet49/1",
+            "portChannel": "",
+            "hostname": "fm151.blr.aristanetworks.com"
+          }
+        },
+        "BG1-34-MGMT-7048T-A-Ethernet8": {
+          "toPort": [
+            {
+              "name": "Management1",
+              "portChannel": "",
+              "hostname": "mt708.blr.aristanetworks.com"
+            }
+          ],
+          "fromPort": {
+            "name": "Ethernet8",
+            "portChannel": "",
+            "hostname": "BG1-34-MGMT-7048T-A"
+          }
+        },
+        "co648.blr.aristanetworks.com-Ethernet1": {
+          "toPort": [
+            {
+              "name": "Ethernet2",
+              "portChannel": "",
+              "hostname": "fm150.blr.aristanetworks.com"
+            }
+          ],
+          "fromPort": {
+            "name": "Ethernet1",
+            "portChannel": "",
+            "hostname": "co648.blr.aristanetworks.com"
+          }
+        },
+        "BG1-34-MGMT-7048T-A-Ethernet3": {
+          "toPort": [
+            {
+              "name": "Management1",
+              "portChannel": "",
+              "hostname": "mt703.blr.aristanetworks.com"
+            }
+          ],
+          "fromPort": {
+            "name": "Ethernet3",
+            "portChannel": "",
+            "hostname": "BG1-34-MGMT-7048T-A"
+          }
+        },
+        "BG1-34-MGMT-7048T-A-Ethernet1": {
+          "toPort": [
+            {
+              "name": "Management1",
+              "portChannel": "",
+              "hostname": "mt701.blr.aristanetworks.com"
+            }
+          ],
+          "fromPort": {
+            "name": "Ethernet1",
+            "portChannel": "",
+            "hostname": "BG1-34-MGMT-7048T-A"
+          }
+        },
+        "mn433.blr.aristanetworks.com-Ethernet51": {
+          "toPort": [
+            {
+              "name": "Ethernet3",
+              "portChannel": "",
+              "hostname": "do451.blr.aristanetworks.com"
+            }
+          ],
+          "fromPort": {
+            "name": "Ethernet51",
+            "portChannel": "",
+            "hostname": "mn433.blr.aristanetworks.com"
+          }
+        },
+        "mn433.blr.aristanetworks.com-Ethernet50": {
+          "toPort": [
+            {
+              "name": "Ethernet2",
+              "portChannel": "",
+              "hostname": "do450.blr.aristanetworks.com"
+            }
+          ],
+          "fromPort": {
+            "name": "Ethernet50",
+            "portChannel": "",
+            "hostname": "mn433.blr.aristanetworks.com"
+          }
+        },
+        "co641.aristanetworks.com-Ethernet11": {
+          "toPort": [
+            {
+              "name": "Ethernet6",
+              "portChannel": "",
+              "hostname": "co645.blr.aristanetworks.com"
+            }
+          ],
+          "fromPort": {
+            "name": "Ethernet11",
+            "portChannel": "",
+            "hostname": "co641.aristanetworks.com"
+          }
+        },
+        "mt708.blr.aristanetworks.com-Ethernet24": {
+          "toPort": [
+            {
+              "name": "Ethernet50",
+              "portChannel": "",
+              "hostname": "mn435"
+            }
+          ],
+          "fromPort": {
+            "name": "Ethernet24",
+            "portChannel": "",
+            "hostname": "mt708.blr.aristanetworks.com"
+          }
+        },
+        "gb421.blr.aristanetworks.com-Ethernet1": {
+          "toPort": [
+            {
+              "name": "Ethernet49/5",
+              "portChannel": "",
+              "hostname": "fm150.blr.aristanetworks.com"
+            }
+          ],
+          "fromPort": {
+            "name": "Ethernet1",
+            "portChannel": "",
+            "hostname": "gb421.blr.aristanetworks.com"
+          }
+        },
+        "fm150.blr.aristanetworks.com-Ethernet49/5": {
+          "toPort": [
+            {
+              "name": "Ethernet1",
+              "portChannel": "",
+              "hostname": "gb421.blr.aristanetworks.com"
+            }
+          ],
+          "fromPort": {
+            "name": "Ethernet49/5",
+            "portChannel": "",
+            "hostname": "fm150.blr.aristanetworks.com"
+          }
+        },
+        "fm150.blr.aristanetworks.com-Ethernet49/1": {
+          "toPort": [
+            {
+              "name": "Ethernet1",
+              "portChannel": "",
+              "hostname": "gb420.blr.aristanetworks.com"
+            }
+          ],
+          "fromPort": {
+            "name": "Ethernet49/1",
+            "portChannel": "",
+            "hostname": "fm150.blr.aristanetworks.com"
+          }
+        },
+        "cz151.blr.aristanetworks.com-Ethernet17": {
+          "toPort": [
+            {
+              "name": "Ethernet17",
+              "portChannel": "",
+              "hostname": "do451.blr.aristanetworks.com"
+            }
+          ],
+          "fromPort": {
+            "name": "Ethernet17",
+            "portChannel": "",
+            "hostname": "cz151.blr.aristanetworks.com"
+          }
+        },
+        "cz153.blr.aristanetworks.com-Ethernet16": {
+          "toPort": [
+            {
+              "name": "Ethernet19",
+              "portChannel": "",
+              "hostname": "mt708.blr.aristanetworks.com"
+            }
+          ],
+          "fromPort": {
+            "name": "Ethernet16",
+            "portChannel": "",
+            "hostname": "cz153.blr.aristanetworks.com"
+          }
+        },
+        "cz151.blr.aristanetworks.com-Ethernet15": {
+          "toPort": [
+            {
+              "name": "Ethernet15",
+              "portChannel": "",
+              "hostname": "cz150.blr.aristanetworks.com"
+            }
+          ],
+          "fromPort": {
+            "name": "Ethernet15",
+            "portChannel": "",
+            "hostname": "cz151.blr.aristanetworks.com"
+          }
+        },
+        "fm150.blr.aristanetworks.com-Management1": {
+          "toPort": [
+            {
+              "name": "Ethernet43",
+              "portChannel": "",
+              "hostname": "BG1-34-MGMT-7048T-A"
+            }
+          ],
+          "fromPort": {
+            "name": "Management1",
+            "portChannel": "",
+            "hostname": "fm150.blr.aristanetworks.com"
+          }
+        },
+        "co585.aristanetworks.com-Ethernet3": {
+          "toPort": [
+            {
+              "name": "Ethernet4",
+              "portChannel": "",
+              "hostname": "ro501.aristanetworks.com"
+            }
+          ],
+          "fromPort": {
+            "name": "Ethernet3",
+            "portChannel": "",
+            "hostname": "co585.aristanetworks.com"
+          }
+        },
+        "gb420.blr.aristanetworks.com-Ethernet65": {
+          "toPort": [
+            {
+              "name": "Ethernet5",
+              "portChannel": "",
+              "hostname": "do450.blr.aristanetworks.com"
+            }
+          ],
+          "fromPort": {
+            "name": "Ethernet65",
+            "portChannel": "",
+            "hostname": "gb420.blr.aristanetworks.com"
+          }
+        },
+        "cz151.blr.aristanetworks.com-Ethernet19": {
+          "toPort": [
+            {
+              "name": "Ethernet19",
+              "portChannel": "",
+              "hostname": "do450.blr.aristanetworks.com"
+            }
+          ],
+          "fromPort": {
+            "name": "Ethernet19",
+            "portChannel": "",
+            "hostname": "cz151.blr.aristanetworks.com"
+          }
+        },
+        "mn434.blr.aristanetworks.com-Ethernet4": {
+          "toPort": [
+            {
+              "name": "Ethernet4",
+              "portChannel": "",
+              "hostname": "mn433.blr.aristanetworks.com"
+            }
+          ],
+          "fromPort": {
+            "name": "Ethernet4",
+            "portChannel": "",
+            "hostname": "mn434.blr.aristanetworks.com"
+          }
+        },
+        "mn434.blr.aristanetworks.com-Ethernet5": {
+          "toPort": [
+            {
+              "name": "Ethernet5",
+              "portChannel": "",
+              "hostname": "mn433.blr.aristanetworks.com"
+            }
+          ],
+          "fromPort": {
+            "name": "Ethernet5",
+            "portChannel": "",
+            "hostname": "mn434.blr.aristanetworks.com"
+          }
+        },
+        "mn434.blr.aristanetworks.com-Ethernet6": {
+          "toPort": [
+            {
+              "name": "Ethernet6",
+              "portChannel": "",
+              "hostname": "mn433.blr.aristanetworks.com"
+            }
+          ],
+          "fromPort": {
+            "name": "Ethernet6",
+            "portChannel": "",
+            "hostname": "mn434.blr.aristanetworks.com"
+          }
+        },
+        "mn434.blr.aristanetworks.com-Ethernet7": {
+          "toPort": [
+            {
+              "name": "Ethernet7",
+              "portChannel": "",
+              "hostname": "mn433.blr.aristanetworks.com"
+            }
+          ],
+          "fromPort": {
+            "name": "Ethernet7",
+            "portChannel": "",
+            "hostname": "mn434.blr.aristanetworks.com"
+          }
+        },
+        "mn434.blr.aristanetworks.com-Ethernet1": {
+          "toPort": [
+            {
+              "name": "Ethernet1",
+              "portChannel": "",
+              "hostname": "mn433.blr.aristanetworks.com"
+            }
+          ],
+          "fromPort": {
+            "name": "Ethernet1",
+            "portChannel": "",
+            "hostname": "mn434.blr.aristanetworks.com"
+          }
+        },
+        "mn434.blr.aristanetworks.com-Ethernet2": {
+          "toPort": [
+            {
+              "name": "Ethernet2",
+              "portChannel": "",
+              "hostname": "mn433.blr.aristanetworks.com"
+            }
+          ],
+          "fromPort": {
+            "name": "Ethernet2",
+            "portChannel": "",
+            "hostname": "mn434.blr.aristanetworks.com"
+          }
+        },
+        "mn434.blr.aristanetworks.com-Ethernet3": {
+          "toPort": [
+            {
+              "name": "Ethernet3",
+              "portChannel": "",
+              "hostname": "mn433.blr.aristanetworks.com"
+            }
+          ],
+          "fromPort": {
+            "name": "Ethernet3",
+            "portChannel": "",
+            "hostname": "mn434.blr.aristanetworks.com"
+          }
+        },
+        "localhost.localdomain-p1p1": {
+          "toPort": [
+            {
+              "name": "Ethernet24",
+              "portChannel": "",
+              "hostname": "co585.aristanetworks.com"
+            }
+          ],
+          "fromPort": {
+            "name": "p1p1",
+            "portChannel": "",
+            "hostname": "localhost.localdomain"
+          }
+        },
+        "do450.blr.aristanetworks.com-Ethernet23": {
+          "toPort": [
+            {
+              "name": "Ethernet44",
+              "portChannel": "",
+              "hostname": "co641.aristanetworks.com"
+            },
+            {
+              "name": "Ethernet20",
+              "portChannel": "",
+              "hostname": "co641.aristanetworks.com"
+            }
+          ],
+          "fromPort": {
+            "name": "Ethernet23",
+            "portChannel": "",
+            "hostname": "do450.blr.aristanetworks.com"
+          }
+        },
+        "mn434.blr.aristanetworks.com-Ethernet9": {
+          "toPort": [
+            {
+              "name": "Ethernet9",
+              "portChannel": "",
+              "hostname": "mn433.blr.aristanetworks.com"
+            }
+          ],
+          "fromPort": {
+            "name": "Ethernet9",
+            "portChannel": "",
+            "hostname": "mn434.blr.aristanetworks.com"
+          }
+        },
+        "ro501.aristanetworks.com-Ethernet1": {
+          "toPort": [
+            {
+              "name": "Ethernet1",
+              "portChannel": "",
+              "hostname": "sr285-alta-lab.dm1tac.aristanetworks.com"
+            }
+          ],
+          "fromPort": {
+            "name": "Ethernet1",
+            "portChannel": "",
+            "hostname": "ro501.aristanetworks.com"
+          }
+        },
+        "mt707.blr.aristanetworks.com-Ethernet17": {
+          "toPort": [
+            {
+              "name": "Ethernet17",
+              "portChannel": "",
+              "hostname": "mt708.blr.aristanetworks.com"
+            }
+          ],
+          "fromPort": {
+            "name": "Ethernet17",
+            "portChannel": "",
+            "hostname": "mt707.blr.aristanetworks.com"
+          }
+        },
+        "ro501.aristanetworks.com-Ethernet5": {
+          "toPort": [
+            {
+              "name": "Ethernet2",
+              "portChannel": "",
+              "hostname": "co587.aristanetworks.com"
+            },
+            {
+              "name": "p6p1",
+              "portChannel": "",
+              "hostname": "tacsrv20.sjc.aristanetworks.com"
+            }
+          ],
+          "fromPort": {
+            "name": "Ethernet5",
+            "portChannel": "",
+            "hostname": "ro501.aristanetworks.com"
+          }
+        },
+        "ro501.aristanetworks.com-Ethernet4": {
+          "toPort": [
+            {
+              "name": "Ethernet3",
+              "portChannel": "",
+              "hostname": "co585.aristanetworks.com"
+            }
+          ],
+          "fromPort": {
+            "name": "Ethernet4",
+            "portChannel": "",
+            "hostname": "ro501.aristanetworks.com"
+          }
+        },
+        "mn433.blr.aristanetworks.com-Ethernet49": {
+          "toPort": [
+            {
+              "name": "Ethernet1",
+              "portChannel": "",
+              "hostname": "do450.blr.aristanetworks.com"
+            }
+          ],
+          "fromPort": {
+            "name": "Ethernet49",
+            "portChannel": "",
+            "hostname": "mn433.blr.aristanetworks.com"
+          }
+        },
+        "ro501.aristanetworks.com-Ethernet9": {
+          "toPort": [
+            {
+              "name": "Ethernet9",
+              "portChannel": "",
+              "hostname": "ro502.aristanetworks.com"
+            }
+          ],
+          "fromPort": {
+            "name": "Ethernet9",
+            "portChannel": "",
+            "hostname": "ro501.aristanetworks.com"
+          }
+        },
+        "mn434.blr.aristanetworks.com-Ethernet8": {
+          "toPort": [
+            {
+              "name": "Ethernet8",
+              "portChannel": "",
+              "hostname": "mn433.blr.aristanetworks.com"
+            }
+          ],
+          "fromPort": {
+            "name": "Ethernet8",
+            "portChannel": "",
+            "hostname": "mn434.blr.aristanetworks.com"
+          }
+        },
+        "co585.aristanetworks.com-Ethernet5": {
+          "toPort": [
+            {
+              "name": "Ethernet6",
+              "portChannel": "",
+              "hostname": "ro504.aristanetworks.com"
+            }
+          ],
+          "fromPort": {
+            "name": "Ethernet5",
+            "portChannel": "",
+            "hostname": "co585.aristanetworks.com"
+          }
+        },
+        "mt707.blr.aristanetworks.com-Ethernet19": {
+          "toPort": [
+            {
+              "name": "Ethernet15",
+              "portChannel": "",
+              "hostname": "cz153.blr.aristanetworks.com"
+            }
+          ],
+          "fromPort": {
+            "name": "Ethernet19",
+            "portChannel": "",
+            "hostname": "mt707.blr.aristanetworks.com"
+          }
+        },
+        "mt706.blr.aristanetworks.com-Ethernet18": {
+          "toPort": [
+            {
+              "name": "Ethernet1/3",
+              "portChannel": "",
+              "hostname": "mt708.blr.aristanetworks.com"
+            }
+          ],
+          "fromPort": {
+            "name": "Ethernet18",
+            "portChannel": "",
+            "hostname": "mt706.blr.aristanetworks.com"
+          }
+        },
+        "co585.aristanetworks.com-Ethernet24": {
+          "toPort": [
+            {
+              "name": "p1p1",
+              "portChannel": "",
+              "hostname": "localhost.localdomain"
+            }
+          ],
+          "fromPort": {
+            "name": "Ethernet24",
+            "portChannel": "",
+            "hostname": "co585.aristanetworks.com"
+          }
+        },
+        "co647.blr.aristanetworks.com-Ethernet8": {
+          "toPort": [
+            {
+              "name": "Ethernet8",
+              "portChannel": "",
+              "hostname": "co648.blr.aristanetworks.com"
+            }
+          ],
+          "fromPort": {
+            "name": "Ethernet8",
+            "portChannel": "",
+            "hostname": "co647.blr.aristanetworks.com"
+          }
+        },
+        "sr285-alta-lab.dm1tac.aristanetworks.com-Ethernet3": {
+          "toPort": [
+            {
+              "name": "Ethernet9",
+              "portChannel": "",
+              "hostname": "co585.aristanetworks.com"
+            }
+          ],
+          "fromPort": {
+            "name": "Ethernet3",
+            "portChannel": "",
+            "hostname": "sr285-alta-lab.dm1tac.aristanetworks.com"
+          }
+        },
+        "cz153.blr.aristanetworks.com-Ethernet21": {
+          "toPort": [
+            {
+              "name": "Ethernet51",
+              "portChannel": "",
+              "hostname": "mn435"
+            }
+          ],
+          "fromPort": {
+            "name": "Ethernet21",
+            "portChannel": "",
+            "hostname": "cz153.blr.aristanetworks.com"
+          }
+        },
+        "cz153.blr.aristanetworks.com-Ethernet27": {
+          "toPort": [
+            {
+              "name": "Ethernet17",
+              "portChannel": "",
+              "hostname": "mt709.blr.aristanetworks.com"
+            }
+          ],
+          "fromPort": {
+            "name": "Ethernet27",
+            "portChannel": "",
+            "hostname": "cz153.blr.aristanetworks.com"
+          }
+        },
+        "mn434.blr.aristanetworks.com-Ethernet10": {
+          "toPort": [
+            {
+              "name": "Ethernet10",
+              "portChannel": "",
+              "hostname": "mn433.blr.aristanetworks.com"
+            }
+          ],
+          "fromPort": {
+            "name": "Ethernet10",
+            "portChannel": "",
+            "hostname": "mn434.blr.aristanetworks.com"
+          }
+        },
+        "co647.blr.aristanetworks.com-Ethernet2": {
+          "toPort": [
+            {
+              "name": "Ethernet1",
+              "portChannel": "",
+              "hostname": "fm151.blr.aristanetworks.com"
+            }
+          ],
+          "fromPort": {
+            "name": "Ethernet2",
+            "portChannel": "",
+            "hostname": "co647.blr.aristanetworks.com"
+          }
+        },
+        "co647.blr.aristanetworks.com-Ethernet1": {
+          "toPort": [
+            {
+              "name": "Ethernet1",
+              "portChannel": "",
+              "hostname": "fm150.blr.aristanetworks.com"
+            }
+          ],
+          "fromPort": {
+            "name": "Ethernet1",
+            "portChannel": "",
+            "hostname": "co647.blr.aristanetworks.com"
+          }
+        },
+        "ro502.aristanetworks.com-Ethernet9": {
+          "toPort": [
+            {
+              "name": "Ethernet9",
+              "portChannel": "",
+              "hostname": "ro501.aristanetworks.com"
+            }
+          ],
+          "fromPort": {
+            "name": "Ethernet9",
+            "portChannel": "",
+            "hostname": "ro502.aristanetworks.com"
+          }
+        },
+        "mt708.blr.aristanetworks.com-Ethernet17": {
+          "toPort": [
+            {
+              "name": "Ethernet17",
+              "portChannel": "",
+              "hostname": "mt707.blr.aristanetworks.com"
+            }
+          ],
+          "fromPort": {
+            "name": "Ethernet17",
+            "portChannel": "",
+            "hostname": "mt708.blr.aristanetworks.com"
+          }
+        },
+        "cz150.blr.aristanetworks.com-Ethernet19": {
+          "toPort": [
+            {
+              "name": "Ethernet19",
+              "portChannel": "",
+              "hostname": "do451.blr.aristanetworks.com"
+            }
+          ],
+          "fromPort": {
+            "name": "Ethernet19",
+            "portChannel": "",
+            "hostname": "cz150.blr.aristanetworks.com"
+          }
+        },
+        "cz150.blr.aristanetworks.com-Ethernet17": {
+          "toPort": [
+            {
+              "name": "Ethernet17",
+              "portChannel": "",
+              "hostname": "do450.blr.aristanetworks.com"
+            }
+          ],
+          "fromPort": {
+            "name": "Ethernet17",
+            "portChannel": "",
+            "hostname": "cz150.blr.aristanetworks.com"
+          }
+        },
+        "cz150.blr.aristanetworks.com-Ethernet15": {
+          "toPort": [
+            {
+              "name": "Ethernet15",
+              "portChannel": "",
+              "hostname": "cz151.blr.aristanetworks.com"
+            }
+          ],
+          "fromPort": {
+            "name": "Ethernet15",
+            "portChannel": "",
+            "hostname": "cz150.blr.aristanetworks.com"
+          }
+        },
+        "mt708.blr.aristanetworks.com-Ethernet19": {
+          "toPort": [
+            {
+              "name": "Ethernet16",
+              "portChannel": "",
+              "hostname": "cz153.blr.aristanetworks.com"
+            }
+          ],
+          "fromPort": {
+            "name": "Ethernet19",
+            "portChannel": "",
+            "hostname": "mt708.blr.aristanetworks.com"
+          }
+        },
+        "co645.blr.aristanetworks.com-Ethernet48": {
+          "toPort": [
+            {
+              "name": "Ethernet52",
+              "portChannel": "",
+              "hostname": "mn434.blr.aristanetworks.com"
+            }
+          ],
+          "fromPort": {
+            "name": "Ethernet48",
+            "portChannel": "",
+            "hostname": "co645.blr.aristanetworks.com"
+          }
+        },
+        "mn431.blr.aristanetworks.com-Ethernet43": {
+          "toPort": [
+            {
+              "name": "Ethernet23",
+              "portChannel": "",
+              "hostname": "mt701.blr.aristanetworks.com"
+            }
+          ],
+          "fromPort": {
+            "name": "Ethernet43",
+            "portChannel": "",
+            "hostname": "mn431.blr.aristanetworks.com"
+          }
+        },
+        "do450.blr.aristanetworks.com-Ethernet8": {
+          "toPort": [
+            {
+              "name": "Ethernet8",
+              "portChannel": "",
+              "hostname": "do451.blr.aristanetworks.com"
+            }
+          ],
+          "fromPort": {
+            "name": "Ethernet8",
+            "portChannel": "",
+            "hostname": "do450.blr.aristanetworks.com"
+          }
+        },
+        "sr285-alta-lab.dm1tac.aristanetworks.com-Ethernet1": {
+          "toPort": [
+            {
+              "name": "Ethernet1",
+              "portChannel": "",
+              "hostname": "ro501.aristanetworks.com"
+            }
+          ],
+          "fromPort": {
+            "name": "Ethernet1",
+            "portChannel": "",
+            "hostname": "sr285-alta-lab.dm1tac.aristanetworks.com"
+          }
+        },
+        "co641.aristanetworks.com-Ethernet4": {
+          "toPort": [
+            {
+              "name": "Ethernet4",
+              "portChannel": "",
+              "hostname": "do451.blr.aristanetworks.com"
+            }
+          ],
+          "fromPort": {
+            "name": "Ethernet4",
+            "portChannel": "",
+            "hostname": "co641.aristanetworks.com"
+          }
+        },
+        "co647.blr.aristanetworks.com-Ethernet3": {
+          "toPort": [
+            {
+              "name": "Ethernet3",
+              "portChannel": "",
+              "hostname": "co646.aristanetworks.com"
+            }
+          ],
+          "fromPort": {
+            "name": "Ethernet3",
+            "portChannel": "",
+            "hostname": "co647.blr.aristanetworks.com"
+          }
+        },
+        "do450.blr.aristanetworks.com-Ethernet5": {
+          "toPort": [
+            {
+              "name": "Ethernet65",
+              "portChannel": "",
+              "hostname": "gb420.blr.aristanetworks.com"
+            }
+          ],
+          "fromPort": {
+            "name": "Ethernet5",
+            "portChannel": "",
+            "hostname": "do450.blr.aristanetworks.com"
+          }
+        },
+        "do450.blr.aristanetworks.com-Ethernet6": {
+          "toPort": [
+            {
+              "name": "Ethernet65",
+              "portChannel": "",
+              "hostname": "gb421.blr.aristanetworks.com"
+            }
+          ],
+          "fromPort": {
+            "name": "Ethernet6",
+            "portChannel": "",
+            "hostname": "do450.blr.aristanetworks.com"
+          }
+        },
+        "do450.blr.aristanetworks.com-Ethernet3": {
+          "toPort": [
+            {
+              "name": "Ethernet51",
+              "portChannel": "",
+              "hostname": "mn434.blr.aristanetworks.com"
+            }
+          ],
+          "fromPort": {
+            "name": "Ethernet3",
+            "portChannel": "",
+            "hostname": "do450.blr.aristanetworks.com"
+          }
+        },
+        "co647.blr.aristanetworks.com-Ethernet7": {
+          "toPort": [
+            {
+              "name": "Ethernet7",
+              "portChannel": "",
+              "hostname": "co648.blr.aristanetworks.com"
+            }
+          ],
+          "fromPort": {
+            "name": "Ethernet7",
+            "portChannel": "",
+            "hostname": "co647.blr.aristanetworks.com"
+          }
+        },
+        "do450.blr.aristanetworks.com-Ethernet1": {
+          "toPort": [
+            {
+              "name": "Ethernet49",
+              "portChannel": "",
+              "hostname": "mn433.blr.aristanetworks.com"
+            }
+          ],
+          "fromPort": {
+            "name": "Ethernet1",
+            "portChannel": "",
+            "hostname": "do450.blr.aristanetworks.com"
+          }
+        },
+        "do450.blr.aristanetworks.com-Ethernet2": {
+          "toPort": [
+            {
+              "name": "Ethernet50",
+              "portChannel": "",
+              "hostname": "mn433.blr.aristanetworks.com"
+            }
+          ],
+          "fromPort": {
+            "name": "Ethernet2",
+            "portChannel": "",
+            "hostname": "do450.blr.aristanetworks.com"
+          }
+        },
+        "co645.blr.aristanetworks.com-Ethernet45": {
+          "toPort": [
+            {
+              "name": "Ethernet45",
+              "portChannel": "",
+              "hostname": "do451.blr.aristanetworks.com"
+            }
+          ],
+          "fromPort": {
+            "name": "Ethernet45",
+            "portChannel": "",
+            "hostname": "co645.blr.aristanetworks.com"
+          }
+        }
+      }
+    }
+  ],
+  "id": "EapiExplorer-1"
+}

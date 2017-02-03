@@ -3,6 +3,8 @@ import sys
 import pyeapi
 from datetime import datetime
 from dateutil import tz
+import parser
+import graph as g
 
 app = Flask(__name__)
 node = pyeapi.connect_to('10.85.128.153')
@@ -22,6 +24,9 @@ def connection():
 
 @app.route("/topology")
 def topology():
+	# graph=parser.graph()
+	# conn=g.main(graph)
+
 	return render_template("topology.html")
 
 @app.route("/vxlan")

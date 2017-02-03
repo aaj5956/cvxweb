@@ -3,14 +3,10 @@ from collections import OrderedDict
 
 
 
-
-
-
-def graph(d):
-    # with open('/Users/sowmitha/Documents/Python/CVX/sample.json') as json_data:
-    #     d=json.load(json_data)
-
-    #d=json.load(d)
+def graph():
+    with open('/Users/sowmitha/Documents/Python/CVX/cvxweb/sample.json') as json_data:
+        d=json.load(json_data)
+    d=json.load(d)
     graph=[]
     iterator=d['result'][0]['neighbors']
 
