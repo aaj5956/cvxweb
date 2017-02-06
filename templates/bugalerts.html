@@ -74,7 +74,8 @@
                         <th class="text-center">#</th>
                         <th class="text-center">SwitchId</th>
                         <th class="text-center">Hostname</th>
-                        <th class="text-center">EOS Version</th>
+                        <th class="text-center">Bug Info</th>
+                        <th class="text-left">EOS Version</th>
                       </tr>
                     </thead>
                     <tbody>
@@ -82,11 +83,10 @@
                       <tr>
                         <td>{{ loop.index }}</td>
                         <td>{{ row.mac }}</td>
-                        <td>
-                          {{ row.op[0].host }}
-                          <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#myModal">Show Bugs</button>
+                        <td>{{ row.op[0].host }}</td>
+                        <td><button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#myModal">Show Bugs</button></td>
                         </td>
-                        <td>{{ row.op[0].eos }}</td>
+                        <td class="text-left">{{ row.op[0].eos }}</td>
                       {% endfor %}
                     </tbody>
                 </div>
@@ -101,10 +101,6 @@
                             <h4 class="modal-title">Bug Data</h4>
                           </div>
                           <div class="modal-body">
-                            <p>bugid : 146279 <br /></p>
-                            <p>ver_intro : [] <br /></p>
-                                <p>ver_fix : 4.15.7, 4.16.6 <br /></p>
-                                <p>details: Wrong RPF interface for some S,Gs after routing change</p>
                           </div>
                           <div class="modal-footer">
                             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>

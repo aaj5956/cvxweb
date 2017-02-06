@@ -17,12 +17,9 @@ def sw_mac(cvxreq):
 def bugalerts(cvxreq,mac):
     op = []
     resp = cvxreq.runCmds(1,["show service bug-alert report switch mac %s" %mac])
-    eos = resp[0]["switches"][mac]["eosVersion"]
+    eos = resp[0]["switches"][mac]["eosVersion"].replace("'","")
     hostname = resp[0]["switches"][mac]["hostname"]
     bugs = resp[0]["switches"][mac]["bugExposureList"]
-    # print "Switch %s installed EOS version is %s" %(hostname,eos)
-    # print "-------------------------------------------------------"
-    # print "Bugs that the switch is exposed to:\n"
     buglist = []
     for bug in bugs:
         bug_det = resp[0]["bugs"][str(bug)]["bugSummary"]
