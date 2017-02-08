@@ -510,7 +510,27 @@ fieldset[disabled] .btn-success.active {
   overflow: scroll;
 }
 
+.td-details {
+  word-wrap: break-word;
+  overflow: hidden;
+  max-width: 160px;
+}
+
 .content-container {
-  padding-top: 100px;
-  padding-bottom: 50px;
+  padding-top: 10%;
+  padding-bottom: 5%;
+}
+
+.custom-label{
+  float: left;
+  margin-right: 32px;
+  padding-top: 6px;
+}
+
+dd, dt {
+    line-height: 2.5;
+    width: inherit !important;
+}
+.dl-horizontal dd{
+  margin-left: 100px !important;
 }
