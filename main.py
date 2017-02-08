@@ -56,7 +56,7 @@ def vxlan():
 @app.route("/bugalerts")
 def bugalert():
 	op = bugalerts.main()
-	# print json.dumps(op,indent = 4)
+	print json.dumps(op,indent = 4)
 	return render_template("bugalerts.html",op = op)
 
 @app.template_filter('format_date')
