@@ -1560,14 +1560,29 @@ layout: {
  },
  });
 
+ cy.elements("edge").qtip({
+   content: function(){ return "SOURCE: "+this.data('source')+"<br>DESTINATION: "+this.data('target')+"<br>INTERFACE: "+this.data('label') },
+   position: {
+     my: 'top center',
+     at: 'bottom center'
+   },
+   style: {
+     classes: 'qtip-tipsy',
+     tip: {
+       width: 16,
+       height: 16
+     }
+   }
+ });
 
-cy.on('tap', 'edge', function(){
-  try { // your browser may block popups
-    window.alert("SOURCE: \n"+this.data('source')+'\n'+"DESTINATION: \n"+this.data('target')+'\n'+"INTERFACE: \n"+this.data('label'));
-  } catch(e){ // fall back on url change
-    window.location.href = this.data('href');
-  }
 
-});
+// cy.on('tap', 'edge', function(){
+  // try { // your browser may block popups
+  //   window.alert("SOURCE: \n"+this.data('source')+'\n'+"DESTINATION: \n"+this.data('target')+'\n'+"INTERFACE: \n"+this.data('label'));
+  // } catch(e){ // fall back on url change
+  //   window.location.href = this.data('href');
+  // }
+
+// });
 
 }); // on dom ready
