@@ -7,10 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="author" content="TAC Team">
 
     <title>CVX Web</title>
-
 
     <!-- Bootstrap Core CSS -->
     <link href="{{ url_for('static', filename = 'css/bootstrap.min.css') }}" rel="stylesheet">
@@ -29,17 +28,13 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-    <style>
-        .jzoom {
-            position: absolute;
-            top: 250px;
-            left: 100px;
-            width: 350px;
-            height: 350px;
-        }
-
-    </style>
-
+    <script type = "text/javascript">
+      $(document).ready(function(){
+          $('[data-toggle="tooltip"]').tooltip();
+          var hname = {{ hostname }};
+          alert(hname);
+      });
+    </script>
 
 </head>
 
@@ -61,15 +56,15 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li class="hidden">
-                        <a href="/"></a>
+                        <a href="#"></a>
                     </li>
                     <li class="page-scroll"><a href="/connections">CVX Clients</a></li>
-                    <li class="page-scroll active"><a href="/topology">Topology</a></li>
+                    <li class="page-scroll"><a href="/topology">Topology</a></li>
                     <li class="page-scroll"><a href="/vxlan">VxLAN</a></li>
                     <li class="page-scroll"><a href="/bugalerts">Bug Alerts</a></li>
                     <li class="page-scroll"><a href="#">RFE</a></li>
                     <li class="page-scroll">
-                        <a href="#">Admin</a>
+                        <a href="#" data-toggle="tooltip" data-placement="bottom" title="HostName : {{ hostname }}&#013FQDN: {{ fqdn }}" data-html="true">Admin</a>
                     </li>
                 </ul>
             </div>
@@ -78,18 +73,26 @@
         <!-- /.container-fluid -->
     </nav>
 
-        <div class="content-container">
-                <!-- div class="col-lg-12"-->
-                  <div class="jzoom">
-                    <img src="{{ url_for('static', filename = 'img/simple.png') }}" alt="" width = "500" height="500">
-</div>
-
-              <!-- /div-->
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <!-- <img class="img-circle" src="{{ url_for('static', filename = 'img/cloud.jpg') }}" alt="" width = "256" height="256"> -->
+                    <button type="button" class="btn btn-primary btn-lg">CLICK TO SEE TOPOLOGY</button>
+                    <!-- <div class="intro-text">
+                        <span class="name">Cloud Vision Exchange</span>
+                        <hr class="star-light">
+                        <span class="skills">A Simple GUI for CVX Server</span>
+                    </div> -->
+                </div>
+            </div>
         </div>
+    </header>
 
     <!-- Footer -->
     <footer class="text-center">
-        <div class="footer-below navbar-fixed-bottom">
+        <div class="footer-below">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
@@ -107,11 +110,8 @@
         </a>
     </div>
 
-
-
     <!-- jQuery -->
-    <script src="http://code.jquery.com/jquery-1.12.1.min.js"></script>
-    <!--script src="{{ url_for('static', filename = 'js/jquery.min.js') }}"></script-->
+    <script src="{{ url_for('static', filename = 'js/jquery.min.js') }}"></script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="{{ url_for('static', filename = 'js/bootstrap.min.js') }}"></script>
@@ -120,25 +120,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
 
     <!-- SigmaJS JavaScript -->
-    <!--script src="{{ url_for('static', filename = 'js/sigma.min.js') }}"></script>
+    <script src="{{ url_for('static', filename = 'js/sigma.min.js') }}"></script>
     <script src="{{ url_for('static', filename = 'js/sigma.require.js') }}"></script>
-    <script src="{{ url_for('static', filename = 'js/jqBootstrapValidation.js') }}"></script-->
+    <script src="{{ url_for('static', filename = 'js/jqBootstrapValidation.js') }}"></script>
 
     <!-- Theme JavaScript -->
-    <!--script src="{{ url_for('static', filename = 'js/custom.js') }}"></script-->
-
-
-    <script src="{{ url_for('static', filename = 'js/jzoom.min.js') }}"></script>
-
-    <script>
-
-    $('.jzoom').jzoom({
-
-  // width / height of the magnifying glass
-    $('.jzoom').jzoom({bgColor: "#786"});
-
-});
-</script>
+    <script src="{{ url_for('static', filename = 'js/custom.js') }}"></script>
 
 </body>
 
