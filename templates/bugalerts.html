@@ -1,153 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>CVX Web</title>
-
-
-    <!-- Bootstrap Core CSS -->
-    <link href="{{ url_for('static', filename = 'css/bootstrap.min.css') }}" rel="stylesheet">
-
-    <!-- Theme CSS -->
-    <link href="{{ url_for('static', filename = 'css/style.css') }}" rel="stylesheet">
-
-    <!-- Custom Fonts -->
-    <link href="{{ url_for('static', filename = 'font-awesome/css/font-awesome.min.css') }}" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-</head>
-
+{% include 'header.html' %}
+{% include 'navbar.html' %}
 <body id="page-top" class="index">
-
-    <!-- Navigation -->
-    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
-                </button>
-                <!-- <img class="img-responsive" src="img/Arista.png" alt="" /> -->
-                <a class="navbar-brand" href="/">Arista</a>
+        <div class="container content-container">
+          <div class="row">
+            <div class="col-lg-6 col-md-6">
+              <div class ="form-group">
+                <label class="custom-label" for="hostname" >HostName</label>
+                <select class="selectpicker" data-live-search="true" data-width="auto" title="Select any Hostname" id="hostname">
+                  {% for row in op %}
+                    <option value="{{ loop.index-1 }}">{{ row.host }}</option>
+                  {% endfor %}
+                </select>
+              </div>
+              <dl class="dl-horizontal" id="bug-info-1">
+              </dl>
             </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="hidden">
-                        <a href="/"></a>
-                    </li>
-                    <li class="page-scroll"><a href="/connections">CVX Clients</a></li>
-                    <li class="page-scroll"><a href="/topology">Topology</a></li>
-                    <li class="page-scroll"><a href="/vxlan">VxLAN</a></li>
-                    <li class="page-scroll active"><a href="/bugalerts">Bug Alerts</a></li>
-                    <li class="page-scroll"><a href="#">RFE</a></li>
-                    <li class="page-scroll">
-                        <a href="#">Admin</a>
-                    </li>
-                </ul>
+            <div class="col-lg-6 col-md-6">
+              <div class ="form-group">
+                <label class="custom-label" for="bugid" >Bug ID</label>
+                <select class="selectpicker" data-live-search="true" data-width="auto" title="Search for Bug ID" id="bug-details">
+                  {% for bug in bugs %}
+                    <option value="{{ bug.res_index }}">{{ bug.bugid }}</option>
+                  {% endfor %}
+                </select>
+              </div>
+              <dl class="dl-horizontal" id="bug-info-2">
+              </dl>
             </div>
-            <!-- /.navbar-collapse -->
+          </div>
         </div>
-        <!-- /.container-fluid -->
-    </nav>
-
-        <div class="content-container">
-                <div class="col-lg-12">
-                  <table class="table table-hover">
-                    <thead>
-                      <tr>
-                        <th class="text-center">#</th>
-                        <th class="text-center">SwitchId</th>
-                        <th class="text-center">Hostname</th>
-                        <th class="text-center">Bug Info</th>
-                        <th class="text-left">EOS Version</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      {% for row in op %}
-                      <tr>
-                        <td>{{ loop.index }}</td>
-                        <td>{{ row.mac }}</td>
-                        <td>{{ row.op[0].host }}</td>
-                        <td><button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#myModal">Show Bugs</button></td>
-                        </td>
-                        <td class="text-left">{{ row.op[0].eos }}</td>
-                      {% endfor %}
-                    </tbody>
-                </div>
-                <!-- Modal -->
-                      <div id="myModal" class="modal fade" role="dialog">
-                      <div class="modal-dialog">
-
-                        <!-- Modal content-->
-                        <div class="modal-content">
-                          <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal">&times;</button>
-                            <h4 class="modal-title">Bug Data</h4>
-                          </div>
-                          <div class="modal-body">
-                          </div>
-                          <div class="modal-footer">
-                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                          </div>
-                        </div>
-
-                      </div>
-                      </div>
+        <!-- Modal-1 -->
+        <div id="myModal-1" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Bug Data</h4>
+              </div>
+              <div class="modal-body">
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Modal-2 -->
+        <div id="myModal-2" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Bug Data</h4>
+              </div>
+              <div class="modal-body">
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
         </div>
 
-    <!-- Footer -->
-    <footer class="text-center">
-        <div class="footer-below navbar-fixed-bottom">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        Copyright &copy; Arista Networks 2017
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
-    <div class="scroll-top page-scroll hidden-sm hidden-xs hidden-lg hidden-md">
-        <a class="btn btn-primary" href="#page-top">
-            <i class="fa fa-chevron-up"></i>
-        </a>
-    </div>
-
-
-
-    <!-- jQuery -->
-    <script src="{{ url_for('static', filename = 'js/jquery.min.js') }}"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="{{ url_for('static', filename = 'js/bootstrap.min.js') }}"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-
-    <!-- SigmaJS JavaScript -->
-    <script src="{{ url_for('static', filename = 'js/jqBootstrapValidation.js') }}"></script>
-
-    <!-- Theme JavaScript -->
-    <script src="{{ url_for('static', filename = 'js/custom.js') }}"></script>
 
 </body>
+{% include 'footer.html' %}
+<script type='text/javascript'>
+$(document).ready(function(){
+    $('#bug').removeClass('page-scroll').addClass('page-scroll active');
 
+    $('#hostname').change(function(){
+      var key = $(this).val();
+      var op = JSON.parse('{{ op|tojson}}');
+      var eos = op[key].eos;
+      var bugs = op[key].bugdata;
+      var mac = op[key].mac;
+      var host = op[key].host;
+      var row = "<dt>SwitchId</dt><dd>"+mac+"</dd><dt>Hostname</dt><dd>"+host+"</dd><dt>EOS Version</dt><dd>"+eos+"</dd><dt>Bug Info</dt><dd><button type='button' class='btn btn-info btn-sm' data-toggle='modal' data-target='#myModal-1'>Show Bugs</button></dd>"
+      $('#bug-info-1').html(row);
+      var len = bugs.length;
+      if(len > 0){
+        $('#myModal-1 .modal-body').html("<table class='table table-hover'><thead><tr><th>Bug ID</th><th>Version Fixed</th><th>Bug Details</th></tr></thead><tbody>");
+        for(var x in bugs){
+          $('#myModal-1 .modal-body tbody').append("<tr><td>"+bugs[x].bugid+"</td><td>"+bugs[x].ver_fix+"</td><td class='td-details'>"+bugs[x].details+"</td></tr>");
+        }
+        $('#myModal-1 .modal-body tbody').append("</tbody></table>");
+      }
+      else{
+        $('#myModal-1 .modal-body').html("No bugs found for this version..");
+      }
+
+    });
+
+    $('#bug-details').change(function(){
+      var key = $(this).val();
+      var bugid = $(this).find("option:selected").text();
+      var op = JSON.parse('{{ op|tojson}}');
+      var bug = JSON.parse('{{ bugs|tojson}}');
+      var eos = op[key].eos;
+      var bugs = op[key].bugdata;
+      var mac = op[key].mac;
+      var host = op[key].host;
+      var fixed;
+      var details;
+      for(var x in bugs){
+        if(bugs[x].bugid == bugid){
+            fixed = bugs[x].ver_fix;
+            details = bugs[x].details;
+        }
+      }
+      var row = "<dt>SwitchId</dt><dd>"+mac+"</dd><dt>Hostname</dt><dd>"+host+"</dd><dt>EOS Version</dt><dd>"+eos+"</dd><dt>Bug Info</dt><dd><button type='button' class='btn btn-info btn-sm' data-toggle='modal' data-target='#myModal-2'>Show Bugs</button></dd>"
+      $('#bug-info-2').html(row);
+      $('#myModal-2 .modal-body').html("<table class='table table-hover'><thead><tr><th>Bug ID</th><th>Version Fixed</th><th>Bug Details</th></tr></thead><tbody>");
+      $('#myModal-2 .modal-body tbody').append("<tr><td>"+bugid+"</td><td>"+fixed+"</td><td class='td-details'>"+details+"</td></tr>");
+      $('#myModal-2 .modal-body tbody').append("</tbody></table>");
+
+    });
+});
+</script>
 </html>
