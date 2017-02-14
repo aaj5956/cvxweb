@@ -6,7 +6,6 @@ import cvxp
 import bugalerts
 from datetime import datetime
 from dateutil import tz
-import parser
 import graph as g
 
 app = Flask(__name__)
@@ -27,9 +26,8 @@ def connection():
 
 @app.route("/topology")
 def topology():
-	# graph=parser.graph()
-	# conn=g.main(graph)
-
+	graph_data=g.graph()
+	#print graph_data
 	return render_template("topology.html")
 
 @app.route("/vxlan")

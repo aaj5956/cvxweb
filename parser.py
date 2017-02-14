@@ -4,9 +4,9 @@ from collections import OrderedDict
 
 
 def graph():
-    with open('/Users/sowmitha/Documents/Python/CVX/cvxweb/sample.json') as json_data:
+    with open('/Users/sowmitha/Documents/Python/CVX-working/cvxweb/sample.json') as json_data:
         d=json.load(json_data)
-    d=json.load(d)
+    #d=json.load(d)
     graph=[]
     iterator=d['result'][0]['neighbors']
 
