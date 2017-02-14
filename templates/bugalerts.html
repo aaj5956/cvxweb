@@ -5,7 +5,7 @@
 <body id="page-top" class="index">
         <div class="container content-container">
           <div class="row">
-            <div class="col-md-6">
+            <div class="col-lg-6 col-md-6">
               <div class ="form-group">
                 <label class="custom-label" for="hostname" >HostName</label>
                 <select class="selectpicker" data-live-search="true" data-width="auto" title="Select any Hostname" id="hostname">
@@ -14,13 +14,42 @@
                   {% endfor %}
                 </select>
               </div>
-              <dl class="dl-horizontal" id="bug-info">
+              <dl class="dl-horizontal" id="bug-info-1">
+              </dl>
+            </div>
+            <div class="col-lg-6 col-md-6">
+              <div class ="form-group">
+                <label class="custom-label" for="bugid" >Bug ID</label>
+                <select class="selectpicker" data-live-search="true" data-width="auto" title="Search for Bug ID" id="bug-details">
+                  {% for bug in bugs %}
+                    <option value="{{ bug.res_index }}">{{ bug.bugid }}</option>
+                  {% endfor %}
+                </select>
+              </div>
+              <dl class="dl-horizontal" id="bug-info-2">
               </dl>
             </div>
           </div>
         </div>
-        <!-- Modal -->
-        <div id="myModal" class="modal fade" role="dialog">
+        <!-- Modal-1 -->
+        <div id="myModal-1" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Bug Data</h4>
+              </div>
+              <div class="modal-body">
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Modal-2 -->
+        <div id="myModal-2" class="modal fade" role="dialog">
           <div class="modal-dialog">
             <!-- Modal content-->
             <div class="modal-content">
@@ -37,11 +66,13 @@
           </div>
         </div>
 
+
 </body>
 {% include 'footer.html' %}
 <script type='text/javascript'>
 $(document).ready(function(){
     $('#bug').removeClass('page-scroll').addClass('page-scroll active');
+
     $('#hostname').change(function(){
       var key = $(this).val();
       var op = JSON.parse('{{ op|tojson}}');
@@ -49,19 +80,44 @@ $(document).ready(function(){
       var bugs = op[key].bugdata;
       var mac = op[key].mac;
       var host = op[key].host;
-      var row = "<dt>SwitchId</dt><dd>"+mac+"</dd><dt>Hostname</dt><dd>"+host+"</dd><dt>EOS Version</dt><dd>"+eos+"</dd><dt>Bug Info</dt><dd><button type='button' class='btn btn-info btn-sm' data-toggle='modal' data-target='#myModal'>Show Bugs</button></dd>"
-      $('#bug-info').html(row);
+      var row = "<dt>SwitchId</dt><dd>"+mac+"</dd><dt>Hostname</dt><dd>"+host+"</dd><dt>EOS Version</dt><dd>"+eos+"</dd><dt>Bug Info</dt><dd><button type='button' class='btn btn-info btn-sm' data-toggle='modal' data-target='#myModal-1'>Show Bugs</button></dd>"
+      $('#bug-info-1').html(row);
       var len = bugs.length;
       if(len > 0){
-        $('.modal-body').html("<table class='table table-hover'><thead><tr><th>Bug ID</th><th>Version Fixed</th><th>Bug Details</th></tr></thead><tbody>");
+        $('#myModal-1 .modal-body').html("<table class='table table-hover'><thead><tr><th>Bug ID</th><th>Version Fixed</th><th>Bug Details</th></tr></thead><tbody>");
         for(var x in bugs){
-          $('.modal-body tbody').append("<tr><td>"+bugs[x].bugid+"</td><td>"+bugs[x].ver_fix+"</td><td class='td-details'>"+bugs[x].details+"</td></tr>");
+          $('#myModal-1 .modal-body tbody').append("<tr><td>"+bugs[x].bugid+"</td><td>"+bugs[x].ver_fix+"</td><td class='td-details'>"+bugs[x].details+"</td></tr>");
         }
-        $('.modal-body tbody').append("</tbody></table>");
+        $('#myModal-1 .modal-body tbody').append("</tbody></table>");
       }
       else{
-        $('.modal-body').html("No bugs found for this version..");
+        $('#myModal-1 .modal-body').html("No bugs found for this version..");
       }
+
+    });
+
+    $('#bug-details').change(function(){
+      var key = $(this).val();
+      var bugid = $(this).find("option:selected").text();
+      var op = JSON.parse('{{ op|tojson}}');
+      var bug = JSON.parse('{{ bugs|tojson}}');
+      var eos = op[key].eos;
+      var bugs = op[key].bugdata;
+      var mac = op[key].mac;
+      var host = op[key].host;
+      var fixed;
+      var details;
+      for(var x in bugs){
+        if(bugs[x].bugid == bugid){
+            fixed = bugs[x].ver_fix;
+            details = bugs[x].details;
+        }
+      }
+      var row = "<dt>SwitchId</dt><dd>"+mac+"</dd><dt>Hostname</dt><dd>"+host+"</dd><dt>EOS Version</dt><dd>"+eos+"</dd><dt>Bug Info</dt><dd><button type='button' class='btn btn-info btn-sm' data-toggle='modal' data-target='#myModal-2'>Show Bugs</button></dd>"
+      $('#bug-info-2').html(row);
+      $('#myModal-2 .modal-body').html("<table class='table table-hover'><thead><tr><th>Bug ID</th><th>Version Fixed</th><th>Bug Details</th></tr></thead><tbody>");
+      $('#myModal-2 .modal-body tbody').append("<tr><td>"+bugid+"</td><td>"+fixed+"</td><td class='td-details'>"+details+"</td></tr>");
+      $('#myModal-2 .modal-body tbody').append("</tbody></table>");
 
     });
 });
