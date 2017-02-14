@@ -4,10 +4,7 @@
 <head>
 
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
     <title>CVX Web</title>
 
 
@@ -22,12 +19,33 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 
+    <!-- Cytoscape  -->
+    <link href="{{ url_for('static', filename = 'cytoscape/style.css') }}" rel="stylesheet" />
+
+    <!-- Cytoscape Dagre -->
+    <script src="https://cdn.rawgit.com/cpettitt/dagre/v0.7.4/dist/dagre.min.js"></script>
+    <script src="https://cdn.rawgit.com/cytoscape/cytoscape.js-dagre/1.1.2/cytoscape-dagre.js"></script>
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+
+
+    <!-- jQuery -->
+    <script src="{{ url_for('static', filename = 'js/jquery.min.js') }}"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="{{ url_for('static', filename = 'js/bootstrap.min.js') }}"></script>
+
+    <!-- Cytoscape -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cytoscape/2.5.4/cytoscape.min.js"></script>
+    <script src="{{ url_for('static', filename = 'cytoscape/custom.js') }}"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="{{ url_for('static', filename = 'js/custom.js') }}"></script>
 </head>
 
 <body id="page-top" class="index">
@@ -65,34 +83,38 @@
         <!-- /.container-fluid -->
     </nav>
 
-        <div class="content-container" id = "content-container">
-          <div class="col-lg-2">
-            <table class="table table-hover">
-              <thead>
+    <div class="content-container">
+      <div class="row">
+        <div class="col-lg-6 col-md-6">
+          <table class="table table-hover">
+            <thead>
+              <tr>
+                <th class="text-center">#</th>
+                <th class="text-center">SwitchID</th>
+                <th class="text-center">Host</th>
+                <th class="text-center">VTEP</th>
+              </tr>
+            </thead>
+            <tbody>
+              {% for row in op %}
                 <tr>
-                  <th class="text-center">#</th>
-                  <th class="text-center">SwitchID</th>
-                  <th class="text-center">Host</th>
-                  <th class="text-center">VTEP</th>
+                  <td>{{ loop.index }}</td>
+                  <td>{{ row.mac }}</td>
+                  <td>{{ row.host }}</td>
+                  <td>{{ row.vtep }}</td>
                 </tr>
-              </thead>
-              <tbody>
-                {% for row in op %}
-                  <tr>
-                    <td>{{ loop.index }}</td>
-                    <td>{{ row.mac }}</td>
-                    <td>{{ row.host }}</td>
-                    <td>{{ row.vtep }}</td>
-                  </tr>
-                {% endfor %}
-              </tbody>
-          </div>
-        <!-- <div class="content-container">
-                <div class="col-lg-12">
-                    <iframe src="{{ url_for('static', filename = 'cytoscape/index.html') }}" style="border:none;" width="1024" height="800"></iframe>
-                </div>
-
-        </div> -->
+              {% endfor %}
+            </tbody>
+          </table>
+        </div>
+        <div class="col-lg-6 col-md-6">
+          <h5>Graph</h5>
+              <div id="cy-container">
+                <div id="cy"></div>
+              </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Footer -->
     <footer class="text-center">
@@ -113,21 +135,6 @@
             <i class="fa fa-chevron-up"></i>
         </a>
     </div>
-
-
-
-    <!-- jQuery -->
-    <script src="{{ url_for('static', filename = 'js/jquery.min.js') }}"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="{{ url_for('static', filename = 'js/bootstrap.min.js') }}"></script>
-
-    <!-- Plugin JavaScript -->
-
-    <script src="{{ url_for('static', filename = 'js/jqBootstrapValidation.js') }}"></script>
-
-    <!-- Theme JavaScript -->
-    <script src="{{ url_for('static', filename = 'js/custom.js') }}"></script>
 </body>
 
 </html>
