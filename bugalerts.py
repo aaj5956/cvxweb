@@ -15,7 +15,7 @@ def sw_mac(cvxreq):
     return macs
 
 def bugalerts(cvxreq,mac):
-    op = []
+    op = {}
     resp = cvxreq.runCmds(1,["show service bug-alert report switch mac %s" %mac])
     eos = resp[0]["switches"][mac]["eosVersion"].replace("'","")
     hostname = resp[0]["switches"][mac]["hostname"]
@@ -25,10 +25,12 @@ def bugalerts(cvxreq,mac):
         bug_det = resp[0]["bugs"][str(bug)]["bugSummary"]
         ver_intro = resp[0]["bugs"][str(bug)]["versionsIntroduced"]
         ver_fix = resp[0]["bugs"][str(bug)]["versionsFixed"]
-        # print "Bug: %s \nDetails:%s \nVersion Introduced:%s \nVersion Fixed: %s\n" %(bug, bug_det,ver_intro,ver_fix)
         buglist.append({'bugid':bug,'details':bug_det,'ver_intro':ver_intro,'ver_fix':ver_fix})
-    op.append({'host':hostname,'eos':eos,'bugdata':buglist})
-    # print op
+    op['mac'] = mac
+    op['host'] = hostname
+    op['eos'] = eos
+    op['bugdata'] = buglist
+    # op.append({'mac':mac,'host':hostname,'eos':eos,'bugdata':buglist})
     return op
 def main():
     url = "https://{}:{}@{}/command-api".format(user,passwd,host)
@@ -39,5 +41,5 @@ def main():
     for mac in macs:
         mac = mac.replace(':','-')
         op = bugalerts(cvxreq,mac)
-        result.append({'mac':mac,'op':op})
+        result.append(op)
     return result

@@ -1,22 +1,10 @@
 document.addEventListener('DOMContentLoaded', function(){ // on dom ready
-
-var treeData;
-
-var oReq = new XMLHttpRequest();
-oReq.onload = reqListener;
-oReq.open("get", "data.json", true);
-oReq.send();
-
-function reqListener(e) {
-    treeData = JSON.parse(this.responseText);
-}
-
+//$(document).ready(function(event) {
 var cy = cytoscape({
   container: document.querySelector('#cy'),
 
   boxSelectionEnabled: false,
   autounselectify: true,
-
   style: cytoscape.stylesheet()
     .selector('node')
       .css({
@@ -48,11 +36,45 @@ var cy = cytoscape({
         'text-opacity': 0
       }),
 
-  elements: treeData,
+  elements: {
+      "nodes": [
+          {
+              "data": {
+                  "id": "n0",
+                  "name": "L3 Network"
+              }
+          },
+          {
+              "data": {
+                  "id": "n1",
+                  "name": "gb421"
+              }
+          },
+          {
+              "data": {
+                  "id": "n2",
+                  "name": "gb420"
+              }
+          }
+      ],
+      "edges": [
+          {
+              "data": {
+                  "source": "n0",
+                  "target": "n1"
+              }
+          },
+          {
+              "data": {
+                  "source": "n0",
+                  "target": "n2"
+              }
+          }
+      ]
+  },
 
   layout: {
     name: 'grid',
-    padding: 10
   }
 });
 
