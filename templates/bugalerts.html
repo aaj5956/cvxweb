@@ -1,8 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-{% include 'header.html' %}
-{% include 'navbar.html' %}
+<head>
+  {% include 'header.html' %}
+  <script type='text/javascript'>
+  $(document).ready(function(){
+      $('#bug').removeClass('page-scroll').addClass('page-scroll active');
+
+      $('#hostname').change(function(){
+        var key = $(this).val();
+        var op = JSON.parse('{{ op|tojson}}');
+        var eos = op[key].eos;
+        var bugs = op[key].bugdata;
+        var mac = op[key].mac;
+        var host = op[key].host;
+        var row = "<dt>SwitchId</dt><dd>"+mac+"</dd><dt>Hostname</dt><dd>"+host+"</dd><dt>EOS Version</dt><dd>"+eos+"</dd><dt>Bug Info</dt><dd><button type='button' class='btn btn-info btn-sm' data-toggle='modal' data-target='#myModal-1'>Show Bugs</button></dd>"
+        $('#bug-info-1').html(row);
+        var len = bugs.length;
+        if(len > 0){
+          $('#myModal-1 .modal-body').html("<table class='table table-hover'><thead><tr><th>Bug ID</th><th>Version Fixed</th><th>Bug Details</th></tr></thead><tbody>");
+          for(var x in bugs){
+            $('#myModal-1 .modal-body tbody').append("<tr><td>"+bugs[x].bugid+"</td><td>"+bugs[x].ver_fix+"</td><td class='td-details'>"+bugs[x].details+"</td></tr>");
+          }
+          $('#myModal-1 .modal-body tbody').append("</tbody></table>");
+        }
+        else{
+          $('#myModal-1 .modal-body').html("No bugs found for this version..");
+        }
+
+      });
+
+      $('#bug-details').change(function(){
+        var key = $(this).val();
+        var bugid = $(this).find("option:selected").text();
+        var op = JSON.parse('{{ op|tojson}}');
+        var bug = JSON.parse('{{ bugs|tojson}}');
+        var eos = op[key].eos;
+        var bugs = op[key].bugdata;
+        var mac = op[key].mac;
+        var host = op[key].host;
+        var fixed;
+        var details;
+        for(var x in bugs){
+          if(bugs[x].bugid == bugid){
+              fixed = bugs[x].ver_fix;
+              details = bugs[x].details;
+          }
+        }
+        var row = "<dt>SwitchId</dt><dd>"+mac+"</dd><dt>Hostname</dt><dd>"+host+"</dd><dt>EOS Version</dt><dd>"+eos+"</dd><dt>Bug Info</dt><dd><button type='button' class='btn btn-info btn-sm' data-toggle='modal' data-target='#myModal-2'>Show Bugs</button></dd>"
+        $('#bug-info-2').html(row);
+        $('#myModal-2 .modal-body').html("<table class='table table-hover'><thead><tr><th>Bug ID</th><th>Version Fixed</th><th>Bug Details</th></tr></thead><tbody>");
+        $('#myModal-2 .modal-body tbody').append("<tr><td>"+bugid+"</td><td>"+fixed+"</td><td class='td-details'>"+details+"</td></tr>");
+        $('#myModal-2 .modal-body tbody').append("</tbody></table>");
+
+      });
+  });
+  </script>
+
+</head>
 <body id="page-top" class="index">
+  {% include 'navbar.html' %}
         <div class="container content-container">
           <div class="row">
             <div class="col-lg-6 col-md-6">
@@ -65,61 +121,6 @@
             </div>
           </div>
         </div>
-
-
+        {% include 'footer.html' %}
 </body>
-{% include 'footer.html' %}
-<script type='text/javascript'>
-$(document).ready(function(){
-    $('#bug').removeClass('page-scroll').addClass('page-scroll active');
-
-    $('#hostname').change(function(){
-      var key = $(this).val();
-      var op = JSON.parse('{{ op|tojson}}');
-      var eos = op[key].eos;
-      var bugs = op[key].bugdata;
-      var mac = op[key].mac;
-      var host = op[key].host;
-      var row = "<dt>SwitchId</dt><dd>"+mac+"</dd><dt>Hostname</dt><dd>"+host+"</dd><dt>EOS Version</dt><dd>"+eos+"</dd><dt>Bug Info</dt><dd><button type='button' class='btn btn-info btn-sm' data-toggle='modal' data-target='#myModal-1'>Show Bugs</button></dd>"
-      $('#bug-info-1').html(row);
-      var len = bugs.length;
-      if(len > 0){
-        $('#myModal-1 .modal-body').html("<table class='table table-hover'><thead><tr><th>Bug ID</th><th>Version Fixed</th><th>Bug Details</th></tr></thead><tbody>");
-        for(var x in bugs){
-          $('#myModal-1 .modal-body tbody').append("<tr><td>"+bugs[x].bugid+"</td><td>"+bugs[x].ver_fix+"</td><td class='td-details'>"+bugs[x].details+"</td></tr>");
-        }
-        $('#myModal-1 .modal-body tbody').append("</tbody></table>");
-      }
-      else{
-        $('#myModal-1 .modal-body').html("No bugs found for this version..");
-      }
-
-    });
-
-    $('#bug-details').change(function(){
-      var key = $(this).val();
-      var bugid = $(this).find("option:selected").text();
-      var op = JSON.parse('{{ op|tojson}}');
-      var bug = JSON.parse('{{ bugs|tojson}}');
-      var eos = op[key].eos;
-      var bugs = op[key].bugdata;
-      var mac = op[key].mac;
-      var host = op[key].host;
-      var fixed;
-      var details;
-      for(var x in bugs){
-        if(bugs[x].bugid == bugid){
-            fixed = bugs[x].ver_fix;
-            details = bugs[x].details;
-        }
-      }
-      var row = "<dt>SwitchId</dt><dd>"+mac+"</dd><dt>Hostname</dt><dd>"+host+"</dd><dt>EOS Version</dt><dd>"+eos+"</dd><dt>Bug Info</dt><dd><button type='button' class='btn btn-info btn-sm' data-toggle='modal' data-target='#myModal-2'>Show Bugs</button></dd>"
-      $('#bug-info-2').html(row);
-      $('#myModal-2 .modal-body').html("<table class='table table-hover'><thead><tr><th>Bug ID</th><th>Version Fixed</th><th>Bug Details</th></tr></thead><tbody>");
-      $('#myModal-2 .modal-body tbody').append("<tr><td>"+bugid+"</td><td>"+fixed+"</td><td class='td-details'>"+details+"</td></tr>");
-      $('#myModal-2 .modal-body tbody').append("</tbody></table>");
-
-    });
-});
-</script>
 </html>

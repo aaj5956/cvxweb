@@ -1,21 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-{% include 'header.html' %}
-{% include 'navbar.html' %}
+<head>
+  {% include 'header.html' %}
+  <script type='text/javascript'>
+  $(document).ready(function(){
+      $('#topo').removeClass('page-scroll').addClass('page-scroll active');
+  });
+  </script>
+
+</head>
 
 <body id="page-top" class="index">
-
+  {% include 'navbar.html' %}
         <div class="content-container">
                 <div class="col-lg-12">
                     <iframe src="{{ url_for('static', filename = 'cyto/topology_index.html') }}" style="border:none;" width="1024" height="800"></iframe>
                 </div>
         </div>
+  {% include 'footer.html' %}
 </body>
-{% include 'footer.html' %}
-<script type='text/javascript'>
-$(document).ready(function(){
-    $('#topo').removeClass('page-scroll').addClass('page-scroll active');
-});
-</script>
-
 </html>

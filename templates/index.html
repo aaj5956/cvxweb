@@ -1,8 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-{% include 'header.html' %}
-{% include 'navbar.html' %}
+<head>
+  {% include 'header.html' %}
+  <script type='text/javascript'>
+  $(document).ready(function(){
+      $('#index').removeClass('page-scroll').addClass('page-scroll active');
+  });
+  </script>
+</head>
 <body id="page-top" class="index">
+  {% include 'navbar.html' %}
     <!-- Header -->
     <header>
         <div class="container">
@@ -18,11 +25,6 @@
             </div>
         </div>
     </header>
+    {% include 'footer.html' %}
 </body>
-{% include 'footer.html' %}
-<script type='text/javascript'>
-$(document).ready(function(){
-    $('#index').removeClass('page-scroll').addClass('page-scroll active');
-});
-</script>
 </html>

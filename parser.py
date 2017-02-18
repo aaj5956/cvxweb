@@ -4,7 +4,7 @@ from collections import OrderedDict
 
 
 def graph():
-    with open('/Users/sowmitha/Documents/Python/CVX-working/cvxweb/sample.json') as json_data:
+    with open('sample.json') as json_data:
         d=json.load(json_data)
     #d=json.load(d)
     graph=[]
