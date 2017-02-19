@@ -1,9 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-{% include 'header.html' %}
-{% include 'navbar.html' %}
-<body id="page-top" class="index">
+<head>
+  {% include 'header.html' %}
+  <script type='text/javascript'>
+  $(document).ready(function(){
+      $('#conn').removeClass('page-scroll').addClass('page-scroll active');
+  });
+  </script>
 
+</head>
+
+<body id="page-top" class="index">
+  {% include 'navbar.html' %}
         <div class="content-container">
                 <div class="col-lg-12">
                   <table class="table table-hover table-container">
@@ -40,12 +48,6 @@
                   </table>
                 </div>
         </div>
-
+        {% include 'footer.html' %}
 </body>
-{% include 'footer.html' %}
-<script type='text/javascript'>
-$(document).ready(function(){
-    $('#conn').removeClass('page-scroll').addClass('page-scroll active');
-});
-</script>
 </html>

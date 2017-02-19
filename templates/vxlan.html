@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    {% include 'header.html' %}
 
     <!-- Cytoscape  -->
     <link href="{{ url_for('static', filename = 'cytoscape/style.css') }}" rel="stylesheet" />
@@ -12,11 +13,16 @@
     <script src="https://cdn.rawgit.com/cpettitt/dagre/v0.7.4/dist/dagre.min.js"></script>
     <script src="https://cdn.rawgit.com/cytoscape/cytoscape.js-dagre/1.1.2/cytoscape-dagre.js"></script>
 
+    <script type='text/javascript'>
+    $(document).ready(function(){
+        $('#vx').removeClass('page-scroll').addClass('page-scroll active');
+    });
+    </script>
+
 </head>
-{% include 'header.html' %}
-{% include 'navbar.html' %}
 
 <body id="page-top" class="index">
+  {% include 'navbar.html' %}
     <div class="content-container">
       <div class="row">
         <div class="col-lg-6 col-md-6">
@@ -43,17 +49,14 @@
         </div>
         <div class="col-lg-6 col-md-6">
           <h5>Graph</h5>
-          <div id="container well">
-            <iframe src="{{ url_for('static', filename = 'cytoscape/index.html') }}" style="border-style: solid; border-width: low;" width="600px" height="400px"></iframe>
-          </div>
+              <div id="cy-container">
+                <iframe src="{{ url_for('static', filename = 'cytoscape/index.html') }}" style="border-style: solid; border-width: low;" width="600px" height="400px"></iframe>
+              </div>
         </div>
       </div>
     </div>
+
+    {% include 'footer.html' %}
+
 </body>
-{% include 'footer.html' %}
-<script type='text/javascript'>
-$(document).ready(function(){
-    $('#vx').removeClass('page-scroll').addClass('page-scroll active');
-});
-</script>
 </html>
