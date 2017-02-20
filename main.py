@@ -54,14 +54,14 @@ def vxlan():
 @app.route("/bugalerts")
 def bugalert():
 	op = bugalerts.main()
-	# print json.dumps(op,indent = 4)
+	buglist = bugalerts.get_all_bugs()
 	bugids = []
 	for index,bugs in enumerate(op):
 		if bugs['bugdata']:
 			for bugindex,bug in enumerate(bugs['bugdata']):
 				bugids.append({'res_index':index, 'bugindex':bugindex, 'bugid':bug['bugid']})
-	# print json.dumps(op,indent=4)
-	return render_template("bugalerts.html", op = op, bugs = bugids)
+	# print json.dumps(bugids, indent = 4 )
+	return render_template("bugalerts.html", op = op, bugs = bugids, buglist = buglist)
 
 @app.template_filter('format_date')
 def format_date(text):

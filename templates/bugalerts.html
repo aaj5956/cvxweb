@@ -32,6 +32,8 @@
       $('#bug-details').change(function(){
         var key = $(this).val();
         var bugid = $(this).find("option:selected").text();
+        var buglist = JSON.parse('{{ buglist|tojson}}');
+        // alert(buglist.indexOf(bugid));
         var op = JSON.parse('{{ op|tojson}}');
         var bug = JSON.parse('{{ bugs|tojson}}');
         var eos = op[key].eos;

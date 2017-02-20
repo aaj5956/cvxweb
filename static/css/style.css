@@ -18,7 +18,7 @@ a:hover,
 a:focus,
 a:active,
 a.active {
-  color: #18BC9C;
+  color: #003468;
   outline: none;
 }
 h1,
@@ -69,8 +69,8 @@ hr.star-primary:after {
 }
 header {
   text-align: center;
-  background: #18BC9C;
-  color: white;
+  background: #FFF;
+  color: #003468;
 }
 header .container {
   padding-top: 100px;
@@ -104,8 +104,8 @@ header .intro-text .skills {
   }
 }
 .navbar-custom {
-  background: #2C3E50;
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background: #003468;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   text-transform: uppercase;
   font-weight: 700;
   border: none;
@@ -129,7 +129,7 @@ header .intro-text .skills {
   color: white;
 }
 .navbar-custom .navbar-nav li a:hover {
-  color: #18BC9C;
+  color: #FFF;
   outline: none;
 }
 .navbar-custom .navbar-nav li a:focus,
@@ -145,7 +145,7 @@ header .intro-text .skills {
 .navbar-custom .navbar-nav li.active a:focus,
 .navbar-custom .navbar-nav li.active a:active {
   color: white;
-  background: #18BC9C;
+  background: #0052a3;
 }
 .navbar-custom .navbar-toggle {
   color: white;
@@ -161,7 +161,7 @@ header .intro-text .skills {
 }
 @media (min-width: 768px) {
   .navbar-custom {
-    padding: 25px 0;
+    /*padding: 25px 0;*/
     -webkit-transition: padding 0.3s;
     -moz-transition: padding 0.3s;
     transition: padding 0.3s;
@@ -303,14 +303,14 @@ footer h3 {
 }
 footer .footer-above {
   padding-top: 50px;
-  background-color: #2C3E50;
+  background-color: #003468;
 }
 footer .footer-col {
   margin-bottom: 50px;
 }
 footer .footer-below {
-  padding: 25px 0;
-  background-color: #233140;
+  padding: 15px 0;
+  background-color: #003468;
 }
 .btn-outline {
   color: white;
@@ -504,7 +504,15 @@ fieldset[disabled] .btn-success.active {
   opacity: 0;
   display: none;
 }
-
+.header-logo{
+  background:url("../img/sprite.png") no-repeat;
+  width:64px;
+  height:64px;
+  background-position:-496px -274px;
+  height:25px;
+  width:125px;
+  margin-top: 10px;
+}
 .table-container {
   text-align: center;
   overflow: scroll;
