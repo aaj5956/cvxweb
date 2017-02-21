@@ -1,10 +1,15 @@
 from jsonrpclib import Server
 import ssl
+import json
 host = '10.85.128.153'
 user = 'admin'
 passwd = ''
 
-def sw_mac(cvxreq):
+url = "https://{}:{}@{}/command-api".format(user,passwd,host)
+ssl._create_default_https_context = ssl._create_unverified_context
+cvxreq = Server(url)
+
+def sw_mac():
     resp = cvxreq.runCmds(1,["show cvx connections brief"])
     n = 0
     macs = []
@@ -14,7 +19,16 @@ def sw_mac(cvxreq):
     	n += 1
     return macs
 
-def bugalerts(cvxreq,mac):
+def client_host_names():
+    resp = cvxreq.runCmds(1,["show cvx connections brief"])[0]['connections']
+    hostnames = []
+    for rows in resp:
+        for key, value in rows.items():
+            if key == 'hostname':
+                hostnames.append(value)
+    return hostnames
+
+def bugalerts(mac):
     op = {}
     resp = cvxreq.runCmds(1,["show service bug-alert report switch mac %s" %mac])
     eos = resp[0]["switches"][mac]["eosVersion"].replace("'","")
@@ -32,14 +46,20 @@ def bugalerts(cvxreq,mac):
     op['bugdata'] = buglist
     # op.append({'mac':mac,'host':hostname,'eos':eos,'bugdata':buglist})
     return op
+
+def get_all_bugs():
+    resp = cvxreq.runCmds(1,["show service bug-alert detail bugs"])
+    hostnames = client_host_names()
+    buglist = []
+    for bugid,bugdata in resp[0]['bugs'].iteritems():
+        buglist.append(bugid)
+    return buglist
+
 def main():
-    url = "https://{}:{}@{}/command-api".format(user,passwd,host)
-    ssl._create_default_https_context = ssl._create_unverified_context
-    cvxreq = Server(url)
-    macs = sw_mac(cvxreq)
+    macs = sw_mac()
     result = []
     for mac in macs:
         mac = mac.replace(':','-')
-        op = bugalerts(cvxreq,mac)
+        op = bugalerts(mac)
         result.append(op)
     return result

@@ -5,8 +5,9 @@
 
     <!-- Cytoscape  -->
     <link href="{{ url_for('static', filename = 'cytoscape/style.css') }}" rel="stylesheet" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/cytoscape/2.5.4/cytoscape.min.js"></script>
+    <script src="http://cytoscape.github.io/cytoscape.js/api/cytoscape.js-latest/cytoscape.min.js"></script>
     <script src="{{ url_for('static', filename = 'cytoscape/custom.js') }}"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 
     <!-- Cytoscape Dagre -->
     <script src="https://cdn.rawgit.com/cpettitt/dagre/v0.7.4/dist/dagre.min.js"></script>
@@ -25,7 +26,7 @@
     <div class="content-container">
       <div class="row">
         <div class="col-lg-6 col-md-6">
-          <table class="table table-hover">
+          <table class="table table-hover table-container">
             <thead>
               <tr>
                 <th class="text-center">#</th>
