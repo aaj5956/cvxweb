@@ -2,6 +2,7 @@ from flask import Flask, render_template
 import json
 import sys
 import pyeapi
+sys.path.append('static/py')
 import cvxp
 import bugalerts
 from datetime import datetime
@@ -49,7 +50,11 @@ def vxlan():
 	        if host['switchId'] == mac:
 	            op[cnt]['host'] = host['host']
 	    cnt += 1
-	return render_template("vxlan.html",op = op)
+
+	cvxp.main()
+	with open("./static/cytoscape/data.json", 'r') as data_file:
+		data = json.load(data_file)
+	return render_template("vxlan.html",op = op, data = data)
 
 @app.route("/bugalerts")
 def bugalert():

@@ -2,7 +2,6 @@ document.addEventListener("DOMContentLoaded", function(){ // on dom ready
 
   var cy = cytoscape({
     container: document.querySelector("#cy"),
-
     boxSelectionEnabled: false,
     autounselectify: true,
     style: cytoscape.stylesheet()
@@ -12,16 +11,16 @@ document.addEventListener("DOMContentLoaded", function(){ // on dom ready
           "text-valign": "center",
           "color": "white",
           "text-outline-width": 2,
-          "background-color": "#999",
-          "text-outline-color": "#999"
+          "background-color": "#4e78a0",
+          "text-outline-color": "#4e78a0"
         })
       .selector("edge")
         .css({
           "curve-style": "bezier",
           "target-arrow-shape": "triangle",
-          "target-arrow-color": "#ccc",
-          "line-color": "#ccc",
-          "width": 1
+          "target-arrow-color": "#B5CCEE",
+          "line-color": "#B5CCEE",
+          "width": 3
         })
       .selector(":selected")
         .css({
@@ -47,13 +46,25 @@ document.addEventListener("DOMContentLoaded", function(){ // on dom ready
             {
                 "data": {
                     "id": "n1",
-                    "name": "gb421"
+                    "name": "do450"
                 }
             },
             {
                 "data": {
                     "id": "n2",
+                    "name": "gb421"
+                }
+            },
+            {
+                "data": {
+                    "id": "n3",
                     "name": "gb420"
+                }
+            },
+            {
+                "data": {
+                    "id": "n4",
+                    "name": "do451"
                 }
             }
         ],
@@ -68,6 +79,18 @@ document.addEventListener("DOMContentLoaded", function(){ // on dom ready
                 "data": {
                     "source": "n0",
                     "target": "n2"
+                }
+            },
+            {
+                "data": {
+                    "source": "n0",
+                    "target": "n3"
+                }
+            },
+            {
+                "data": {
+                    "source": "n0",
+                    "target": "n4"
                 }
             }
         ]
@@ -93,4 +116,3 @@ document.addEventListener("DOMContentLoaded", function(){ // on dom ready
   });
 
 }); // on dom ready
-

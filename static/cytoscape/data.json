@@ -9,13 +9,25 @@
         {
             "data": {
                 "id": "n1", 
-                "name": "gb421"
+                "name": "do450"
             }
         }, 
         {
             "data": {
                 "id": "n2", 
+                "name": "gb421"
+            }
+        }, 
+        {
+            "data": {
+                "id": "n3", 
                 "name": "gb420"
+            }
+        }, 
+        {
+            "data": {
+                "id": "n4", 
+                "name": "do451"
             }
         }
     ], 
@@ -30,6 +42,18 @@
             "data": {
                 "source": "n0", 
                 "target": "n2"
+            }
+        }, 
+        {
+            "data": {
+                "source": "n0", 
+                "target": "n3"
+            }
+        }, 
+        {
+            "data": {
+                "source": "n0", 
+                "target": "n4"
             }
         }
     ]
