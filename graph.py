@@ -36,5 +36,5 @@ def graph():
         }
 
         data["edges"].append(temp_edge)
-    #print json.dumps(data,indent=4)
+    print json.dumps(data,indent=4)
     return data

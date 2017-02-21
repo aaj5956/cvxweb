@@ -52,8 +52,22 @@ def graph():
         if (len(i))==0:
             to_delete=graph.index(i)
             del graph[to_delete]
+    duplicate=[]
 
-    #print json.dumps(graph,indent=4)
+    #print len(graph)
+    duplicate = []
+    for i in range(0,len(graph)):
+        for j in range(i,len(graph)):
+            if ((graph[i][0]==graph[j][1]) and (graph[i][1]==graph[j][0])):
+                duplicate.append(i)
+
+    for index in duplicate:
+        graph[index]=1
+
+    while 1 in graph:
+        graph.remove(1)
+
     return graph
+
 if __name__=='__main__':
     graph(d)
