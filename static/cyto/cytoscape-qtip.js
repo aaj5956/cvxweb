@@ -1,4 +1,11 @@
 /*!
+ * Copyright (C) 2017  Arista Networks, Inc.
+ * Use of this source code is governed by the Apache License 2.0
+ * that can be found in the COPYING file.
+
+
+
+
 Copyright (c) The Cytoscape Consortium
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of

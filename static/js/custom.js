@@ -1,4 +1,7 @@
 // Freelancer Theme JavaScript
+// * Copyright (C) 2017  Arista Networks, Inc.
+// * Use of this source code is governed by the Apache License 2.0
+// * that can be found in the COPYING file.
 
 (function($) {
     "use strict"; // Start of use strict
@@ -19,7 +22,7 @@
     });
 
     // Closes the Responsive Menu on Menu Item Click
-    $('.navbar-collapse ul li a').click(function(){ 
+    $('.navbar-collapse ul li a').click(function(){
             $('.navbar-toggle:visible').click();
     });
 
